@@ -1,0 +1,492 @@
+body{
+    background-color: #f5f5f5;
+}
+/* PAGE SECTION */
+.page-title-wrapper.doctors{
+    background-image: url(../images/doctor-page-title.jpg);
+    padding: 106px 0 114px 0;
+}
+.page-title-wrapper:before {
+    background-color: rgba(0,0,0,0.2);
+}
+.page-title-wrapper.doctors .page-title {
+    color: #fff;
+    text-align: left;
+    font-size: 36px;
+    line-height: 45px;
+}
+.page-title-wrapper.doctors #breadcrumb {
+    color: #fff;
+    text-align: right !important;
+    font-size: 16px;
+    margin-bottom: 0;
+    justify-content: flex-end !important;
+}
+#breadcrumb a{
+    color: #fff;
+}
+/* MAIN SECTION */
+#doctors-main{
+    background: #f5f5f5;
+    position: relative;
+    padding-top: 0;
+}
+#doctors-main .row{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.dr-content-left{
+    padding-top: 114px;
+    padding-right: 30px;
+    background-color: #f5f5f5;
+}
+#dr-content-area {
+    background: #fff;
+    padding: 114px 15px 120px 30px;
+}
+/* FIND-DR */
+.separator{
+    width: 20%;
+    height: 2px;
+    background-color: #007DF2;
+    margin-bottom: 32px !important;
+}
+.find-dr-heading{
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 11px;
+    color: #303030;
+}
+#search-dr{
+    text-align: left;
+    background: #fff;
+    display: block;
+    box-shadow: 0 0 20px rgba(48, 48, 48, 0.1);
+    padding: 31px 25px 50px;
+}
+#search-dr label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #303030;
+    padding-bottom: 14px;
+    display: block;
+    margin-bottom: 0 !important;
+}
+#search-dr input{
+    background-color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    height: 50px;
+    padding: 11px 23px;
+    outline: none;
+    width: 100%;
+}
+#search-dr input:focus,
+#search-dr input:hover {
+    background: #fff;
+    border-color: rgba(0, 125, 242, 1);
+    color: #007DF2;
+}
+.dr-department-option{
+    padding-top: 10px;
+}
+.dr-department-option option{
+    color: #007df2;
+}
+.dr-department-option select{
+    background-color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    height: 50px;
+    padding: 11px 23px;
+    outline: none;
+    width: 100%;
+    color: #777;
+    margin-bottom: 15px;
+}
+.dr-department-option select:focus,
+.dr-department-option select:hover {
+    background: #fff;
+    border-color: rgba(0, 125, 242, 1);
+    color: #007DF2;
+}
+.dr-search-submit {
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    padding: 10px 36px;
+    background-color: rgba(0, 125, 242, 1) !important;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border-color: rgba(0, 125, 242, 1);
+}
+.dr-search-submit:hover{
+    background-color: #303030 !important;
+    border-color: #303030 !important;
+    color: #fff !important;
+}
+.dr_column_container{
+    margin: 0;
+    padding-top: 75px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.column-inner-dr {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 42px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 219px;
+    background-image: url(../images/contact-us.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.column-inner-dr h3{
+    margin: 0 0 15px;
+    color: #fff;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+}
+.text-box{
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+}
+.column-inner-dr p{
+margin-bottom: 0;
+font-size: 14px;
+color: #fff;
+}
+.btn-white{
+    background: #fff;
+    color: #303030 !important;
+    line-height: 1.3;
+    padding: 15.5px 35px;
+}
+/* DR CONTENT AREA */
+.dr-archive-title{
+    margin: 0 0 15px !important;
+    color: #303030 !important;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+}
+.dr-archive-desc{
+width: 85%;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+.dr-list{
+    margin-top: 44px;
+}
+.grid-item-inner {
+    padding: 10px 10px 7px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    border: 1px solid #e7e7e7;
+}
+.grid-media{
+    width: 30.1%;
+    box-sizing: border-box;
+}
+.grid-media img{
+    width: 100%;
+    height: auto;
+}
+.content-right {
+    width: 69.9%;
+    padding: 0 30px 25px;
+}
+.entry-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 33px;
+    padding-top: 9px;
+    margin-bottom: 5px;
+}
+.entry-title a{
+    color: #303030 !important;
+}
+.content-right .subtitle {
+    color: #888;
+}
+.content-right .skill {
+    font-weight: 600;
+    color: #303030;
+    padding-top: 9px;
+}
+.content-right .dr-footer {
+    padding-top: 33px;
+}
+.content-right .dr-footer a {
+    border-bottom: #d8d8d8 solid 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #303030;
+    padding-bottom: 2px;
+}
+.dr-footer a:last-child{
+    margin-left: 30px;
+}
+.navigation.pagination {
+    padding-top: 45px;
+}
+
+.navigation.pagination .page-numbers {
+    display: inline-block;
+    color: #777;
+    height: 41px;
+    width: 41px;
+    text-align: center;
+    line-height: 39px;
+    background: #fff;
+    margin-right: 10px;
+}
+.page-numbers.current {
+    background: rgba(0, 125, 242, 1) !important;
+    color: #fff !important;
+    border-color: rgba(0, 125, 242, 1);
+}
+.page-numbers:hover{
+    background: rgba(0, 125, 242, 1) !important;
+    color: #fff !important;
+}
+/* ==================================== */
+/*       Doctor-Single-John Harry       */
+/* ==================================== */
+#single-content-area{
+    padding-right: 30px;
+    padding-left: 15px;
+}
+.single-content-left{
+    padding-right: 30px;
+    padding-left: 0;
+}
+#dr-info{
+    padding: 0;
+}
+.single-img{
+    margin-bottom: 35px;
+    margin-top: 120px;
+    display: inline-block;
+    vertical-align: top;
+}
+.single-img img{
+    width: 100%;
+    height: auto;
+}
+.single-heading{
+    font-size: 36px;
+    line-height: 52px;
+    margin-bottom: 12px !important;
+    padding-top: 2px !important;
+    margin: 0 0 15px;
+    color: #303030 !important;
+    font-family: Poppins;
+    font-weight: 600;
+}
+#dr-contact h6{
+    font-size: 16px;
+    color: #007df2;
+    text-align: inherit;
+    padding-top: 2px !important;
+    padding-bottom: 16px !important;
+}
+.dr-social a{
+    font-size: 16px;
+    line-height: 35px;
+    float: left;
+    width: 35px;
+    height: 35px;
+    background: #eee;
+    margin-right: 10px;
+    color: #303030;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0 9.5px;
+}
+.dr-social a:last-child{
+    margin-right: 0;
+}
+.dr-social a:hover{
+    background: rgba(0, 125, 242, 1);
+    color: #fff;
+}
+/* DR-CONTACT-INFO */
+.dr-fancybox{
+    padding-top: 71px;
+}
+.dr-cont-info{
+position: relative;
+margin-top: 65px;
+}
+.dr-cont-info.first{
+    margin-top: 0;
+    }
+.content-top {
+    border-bottom: #e6e6e6 solid 1px;
+    padding-bottom: 11px;
+}
+.dr-cont-info-icon{
+    border-radius: 5px;
+    display: inline-block;
+    padding-right: 6px;
+}
+.dr-cont-info-icon i{
+    font-size: 25px;
+    line-height: 26px;
+    color: rgba(0, 125, 242, 1);
+}
+.flaticon-first-aid-kit-1:before {
+    content: "\f162";
+}
+.flaticon-business-card-of-a-man-with-contact-info:before {
+    content: "\f163";
+}
+.flaticon-call-answer:before {
+    content: "\f11f";
+}
+.flaticon-email:before {
+    content: "\f170";
+}
+.flaticon-calendar-with-a-clock-time-tools:before {
+    content: "\f164";
+}
+.block-icon i {
+    color: #303030;
+    font-size: 15px;
+    line-height: 26px;
+    padding-right: 15px;
+}
+.dr-cont-info-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 14px;
+    color: #303030;
+    display: inline-block;
+    transition: all 300ms linear 0ms;
+}
+.dr-cont-info-desc {
+    font-size: 15px;
+    line-height: 26px;
+    color: #777;
+    padding-top: 23px;
+}
+.time-working{
+    list-style: none;
+    padding: 0;
+    padding-top: 25px;
+    display: block;
+}
+.time-working li {
+    font-size: 14px;
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.time-working li span {
+    float: right;
+    color: #303030;
+}
+#dr-info{
+    background-color: #fff;
+}
+#dr-info .column_inner{
+    padding-left: 30px;
+    padding-top: 114px !important;
+}
+.intro{
+    margin-top: 0;
+    color: #303030;
+    margin-bottom: 15px !important;
+}
+.block{
+    margin-bottom: 18px !important;
+    padding-top: 19px !important;
+}
+blockquote {
+    margin: 0;
+    padding: 0;
+    padding-left: 45px;
+    position: relative;
+    color: #303030 !important;
+}
+
+blockquote:before {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    content: "\f130" !important;
+    font-family: Flaticon;
+    font-style: normal;
+    font-size: 18px;
+    color: rgba(0, 125, 242, 1);
+}
+.block-text{
+    margin-bottom: 22px !important;
+}
+.skills{
+    padding-top: 28px !important;
+    margin-bottom: 15px !important;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 600;
+    color: #303030 !important;
+}
+.skill{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.skill-list{
+    padding-top: 28px !important;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.column_skill{
+    padding: 0;
+}
+.column_skill .skill{
+    margin-bottom: 35px;
+}
+
+.skill ul{
+    padding-left: 0;
+    display: block;
+}
+.skill ul li {
+    position: relative;
+    padding-left: 28px;
+    padding-bottom: 14px;
+    font-weight: 600;
+    color: #303030;
+}
+.skill ul li::before{
+    content: "\f156";
+    font-family: Flaticon;
+    font-style: normal;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgba(0, 125, 242, 1);
+}
+.consultation{
+    font-size: 24px;
+    line-height: 33px;
+    color: #303030;
+}
+.dr-info-text-box{
+    margin-bottom: 35px;
+    padding-bottom: 4px;
+}
+.dr-consultation-form{
+    margin-bottom: 114px;
+    padding-left: 0;
+}
