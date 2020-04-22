@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/54e137977b.js" crossorigin="anonymous"></script>
+  <title>FAQ</title>
+
+
+
+</head>
+
+<body>
+  <div class="full-page">
+
+    <!-- HEADER & NAVIGATION BAR -->
+    <header>
+      <div id="header-top" class="header-top clearfix">
+        <div class="row justify-content-between header-top-row">
+          <div class="column col-sm-12 col-lg-8 col-md-12 left-line">
+            <div class="column-inner">
+              <div class="contact-us-head">
+                <span>
+                  <i class="fas fa-phone-alt"></i>
+                  +(123) 1800-88-66
+                </span>
+                <span>
+                  <i class="fas fa-clock"></i>
+                  Mon - Fri: 9:00 am - 5:00 PM
+                </span>
+                <span>
+                  <i class="fas fa-map-marker-alt"></i>
+                  34TH Avenue - New York, W2 3XE
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="column col-sm-12 col-lg-4 col-md-12 right-line">
+            <div class="column-inner">
+              <div class="social-list text-end d-flex justify-content-end">
+                <a class="header-icon header-icon-social"><span class="social-icon fa fa-facebook"></span></a>
+                <a class="header-icon header-icon-social"><span class="social-icon fa fa-twitter"></span></a>
+                <a class="header-icon header-icon-social"><span class="social-icon fab fa-pinterest-p"></span></a>
+                <a class="header-icon header-icon-social"><span class="social-icon fab fa-dribbble"></span></a>
+                <a class="header-icon header-icon-social"><span class="social-icon fab fa-linkedin-in"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="header" class="header header-default sticky-on mobile-sticky header-only-sticky">
+        <div class="header_inner clearfix">
+          <div class="row align-items-center justify-content-between">
+            <div class="main-logo col-3 col-sm-2">
+              <a href="https://syring.spyropress.com/">
+                <img src="images/logo (1).svg" alt=""></a>
+            </div>
+            <div class="header-menu col-9 col-sm-9 d-flex justify-content-end">
+              <nav id="navigation" class="navbar navbar-expand-lg static-nav ">
+                <ul id="menu-main-menu" class="main-nav desktop-nav">
+                  <li class="nav-item"><a href="#" class="nav-link"><span>Home</span></a></li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"><span>Pages</span></a>
+                    <div class="sub-menu pages">
+                      <ul>
+                        <li><a href="our-clinic.html" class="page-name">Our Clinic</a></li>
+                        <li><a href="contact-us.html" class="page-name">Contact Us</a></li>
+                        <li><a href="faq.html" class="page-name">FAQ</a></li>
+                        <li><a href="pricing.html" class="page-name">Pricing</a></li>
+                      </ul>
+                      <div class="location">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2s!4v1560412999092!5m2!1sen!2s"
+                          width="600" height="175" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item"><a href="#" class="nav-link"><span>Doctors</span></a>
+                    <div class="sub-menu doctors">
+                      <ul>
+                        <li><a href="doctors.html" class="page-name">Find A Doctor</a></li>
+                        <li><a href="#view-profil" class="page-name">Doctor Single</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item"><a href="#" class="nav-link"><span>Departments</span></a>
+                    <div class="sub-menu departments">
+                      <ul>
+                        <li><a href="departments.html" class="page-name">Medical Departments</a></li>
+                        <li><a href="#dental-clinic" class="page-name">Dental Clinic</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item"><a href="blog.html" class="nav-link"><span>Blog</span></a></li>
+                  <li class="nav-item"><a href="#" class="nav-link"><span>Shop</span></a>
+                    <div class="sub-menu shop">
+                      <ul>
+                        <li><a href="doctors.html" class="page-name">Shop Sidebar Left</a></li>
+                        <li><a href="#cart-page" class="page-name">Cart</a></li>
+                        <li><a href="#checkout-page" class="page-name">Checkout</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item"><a href="#" class="nav-link"><span>Elements</span></a></li>
+                </ul>
+              </nav>
+              <div class="header-atts">
+                <div class="header-atts-inner">
+                  <a href="#header-search" class="header-search">
+                    <i class="fab fa-sistrix"></i>
+                  </a>
+                  <div id="header-search-modal" class="mfp-hide  red-animation fall-perspective animate">
+                    <div class="search-modal-content">
+                      <form class="search-form">
+                        <input type="search" value="" class="search-field" placeholder="Enter key word">
+                        <input type="submit" value="search" class="search-submit">
+                      </form>
+                      <p class="search-description">
+                        <span># Type at least 1 character to search</span>
+                        <span># Hit enter to search or ESC to close</span>
+                      </p>
+                    </div>
+                    <span class="modal-close"><i class="fas fa-times"></i></span>
+                  </div>
+                  <a href="#header-cart" class="header-icon header-cart">
+                    <i class="fas fa-shopping-cart shopping-cart"></i>
+                    <span class="cart_total">0</span>
+                  </a>
+                  <div class="mini-cart mousewheel open">
+                    <div class="mousewheel-inner widget_shopping_cart">
+                      <p class="woocommerce-mini-cart__empty-message">No products in the basket.</p>
+                    </div>
+                  </div>
+                  <a href="javascript:void(0)" id="menu-mobile" class="menu-mobile header-icon d-xl-none"
+                    title="Open Menu">
+                    <i class="fas fa-bars"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+      <!-- TITLE SECTION -->
+      <div class="page-title-wrapper">
+        <div class="page-title-inner container">
+            <div class="row align-items-center">
+                <div id="page-title" class="page-title col-md-12">
+                    <div class="title">Frequent Asked Questions</div>
+                </div>
+                <div id="breadcrumb" class="breadcrumb col-md-12">
+                    <div class="breadcrumb-inner">
+                        <a href="index.html">
+                            <span property="name">Home</span>
+                        </a>
+                        &nbsp;/&nbsp;<span><span property="name">FAQ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Questions Box -->
+    <main id="red-main" class="red-main container">
+      <div class="row">
+        <div class="content-area blog-grid-style-5 col-lg-12">
+  
+  
+          <div class="wpb_column vc_column_container vc_col-sm-12 ">
+  
+            <div class="vc_column-inner">
+  
+              <div class="vc_tta-tabs-container">
+                <ul class="vc_tta-tabs-list list">
+                  <li class="vc_tta-tab list-unstyled ">
+                    <a href="#1555747364951-69427f38-fca0">
+                      <span class="title-text">
+                        
+                        <h5>About Syring Medical</h5>
+                      </span>
+                    </a>
+                    <p>Syring Medical was founded on a better model of care</p>
+                  </li>
+                  <li class="vc_tta-tab list-unstyled  ">
+                    <a href="#1555747365004-42374e84-b95b">
+                      <span class="title-text">
+                        <p></p>
+                        <h5>Primary Care</h5>
+                      </span>
+                    </a>
+                    <p>Syring Medical was founded on a better model of care</p>
+                  </li>
+                  <li class="vc_tta-tab list-unstyled  ">
+                    <a href="#1555747453078-0439a16a-f1f7">
+                      <span class="title-text">
+                        <p></p>
+                        <h5>Clinical Services</h5>
+                      </span>
+                    </a>
+                    <p>Syring Medical was founded on a better model of care</p>
+                  </li>
+                  <li class="vc_tta-tab list-unstyled  ">
+                    <a href="#1555749164329-9972a4b9-b323">
+                      <span class="title-text">
+                        <p></p>
+                        <h5>Clinical Services</h5>
+                      </span>
+                    </a>
+                    <p>Syring Medical was founded on a better model of care</p>
+                  </li>
+                  <li class="vc_tta-tab list-unstyled  ">
+                    <a href="#1555749206682-fa1bb2bd-2230">
+                      <span class="title-text">
+                        <p></p>
+                        <h5>Membership & Insurance</h5>
+                      </span>
+                    </a>
+                    <p>Syring Medical was founded on a better model of care</p>
+                  </li>
+  
+  
+                </ul>
+              </div>
+              <div class="vc_tta-tabs-container">
+                <div class="vc_tta-panels">
+                  <div class=" vc_tta-panel active_c " id="#1555747364951-69427f38-fca0">
+                    <div class="head">
+  
+                     <h4 class="panel-title">
+                      <a href="#1555747364951-69427f38-fca0">
+                        <span class="title-text">
+                          
+                          <h5>About Syring Medical</h5>
+                        </span>
+                      </a>
+                      <p>The term primary care refers to the kind of medical care you need first</p>
+                     </h4>
+                    </div>
+                   <div class="tt-body">
+                    <h3>About Syring Medical</h3>
+                    <p>Can’t find it here? Check out our <a href="#">Help Center</a></p>
+
+                    <div id="full-accordion ">
+                      
+                      <button class="accordion">Section 1</button>
+  
+                      <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+  
+                      <button class="accordion">Section 2</button>
+                      <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                      <button class="accordion">Section 2</button>
+                      <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                      <button class="accordion">Section 2</button>
+                      <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                      <button class="accordion">Section 2</button>
+                      <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                      <button class="accordion">Section 2</button>
+                      <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                      <button class="accordion">Section 2</button>
+                      <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                      <button class="accordion">Section 2</button>
+                      <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+  
+                      <button class="accordion">Section 3</button>
+                      <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                    </div>
+                   </div>
+                  </div>
+                
+  
+                  <div class=" vc_tta-panel " id="#1555747365004-42374e84-b95b">
+                    <div class="head">
+  
+                     <h4 class="panel-title">
+                      <a href="#1555747365004-42374e84-b95b">
+                        <span class="title-text">
+                          <p></p>
+                          <h5>Primary Care</h5>
+                        </span>
+                      </a>
+                     
+                      <p>The term primary care refers to the kind of medical care you need first</p>
+                     </h4>
+                    </div>
+                   <div class="tt-body">
+                    <h3>Primary Care</h3>
+                    <p>Can’t find it here? Check out our <a href="#">Help Center</a></p>
+
+                    <div id="accordion ">
+                      
+                      <button class="accordion">Section 1</button>
+  
+                      <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+  
+                      <button class="accordion">Section 2</button>
+                      <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                      <button class="accordion">Section 2</button>
+                      <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                      <button class="accordion">Section 2</button>
+                      <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                      <button class="accordion">Section 2</button>
+                      <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                      <button class="accordion">Section 2</button>
+                      <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                      <button class="accordion">Section 2</button>
+                      <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                      <button class="accordion">Section 2</button>
+                      <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+  
+                      <button class="accordion">Section 3</button>
+                      <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                    </div>
+                   </div>
+                  </div>
+               
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Book and appointment -->
+  
+  <div class="appointment">
+    <div class="wvc_col-sm-12 vc_col-has-fill ">
+  
+      <div class=" book vc_column-inner vc_custom_1561103354360">
+  
+        <div class="red-call-to-action  layout-1">
+          <div class="red-cta-content">
+            <h2 class="cta-title">Contact to book your appointment!</h2>
+          </div>
+          <div class="red-cta-content">
+            <a class="btn btn-lg" href="#">
+              <span>Book an Appointment</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+        <div class="row_list">
+  
+            <div class="wpb_column vc_column_container vc_col-sm-3 vc_col-md-4">
+                <div class="inner">
+                    <div class="wpb_wrapper">
+                        <div class="logo">
+                            <a href="https://syring.spyropress.com/">
+                                <img src="images/logo-white.svg" alt=""></a>
+                        </div>
+                        <div class="text-content">
+                            <div class="wpb_wrapper">
+                                <p>With a background in the healthcare software industry and a desire to build great
+                                    technology to help companies succeed in making healthcare better.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  
+            </div>
+            <div class="wpb_column vc_column_container vc_col-sm-3 vc_col-md-4">
+                <div class="inner">
+                    <div class="wpb_wrapper">
+                        <h3 class="footer-title">Quick Links</h3>
+                        <div class="menu-quick-list">
+                            <div class="menu">
+                                <div class="menu-item">
+                                    <a href="#">About us</a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">Departments</a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">Find A Doctor</a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">FAQ</a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">TimeTable</a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="#">News</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wpb_column vc_column_container vc_col-sm-3 vc_col-md-4">
+                <div class="inner">
+                    <div class="wpb_wrapper">
+                        <h3 class="footer-title">Contact</h3>
+                        <div class="column">
+                            <p>
+                                34th Avenue – New York, W2 3XE
+                                <br>
+                                United State.
+                                <br>
+  
+                                info@yourdomain.com
+                                <br>
+  
+                                +(123) 1800-88-66
+                            </p>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.facebook.com/">
+                                <i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.twitter.com/">
+                                <i class="fab fa-twitter"></i></a>
+                            <a href="https://www.pinterest.com/">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                            <a href="https://www.dribble.com/">
+                                <i class="fab fa-dribbble"></i></a>
+                            <a href="https://www.linkedin.com/">
+                                <i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+  
+            </div>
+            <div class="wpb_column vc_column_container vc_col-sm-3 vc_col-md-4">
+                <div class="wpb_wrapper">
+                    <h3 class="footer-title left">Instagram</h3>
+                    <div class="red-instagram layout-default">
+                      <div class="row gutters-5 clearfix">
+  
+                        <div class="instagram-item col-4 overlay-wrap">
+                            <a href="https://www.instagram.com/">
+                                <img class="icon" src="images/footer-img1.jpg" alt="">
+                            </a>
+                            <div class="hover">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+  
+                        </div>
+                        <div class="instagram-item col-4 overlay-wrap">
+                            <a href="https://www.instagram.com/">
+                                <img class="icon" src="images/footer-img2.jpg" alt="">
+                            </a>
+                            <div class="hover">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </div>
+                        <div class="instagram-item col-4 overlay-wrap">
+                            <a href="https://www.instagram.com/">
+                                <img class="icon" src="images/footer-img3.jpg" alt="">
+                            </a>
+                            <div class="hover">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+  
+                        </div>
+                        <div class="instagram-item col-4 overlay-wrap">
+                            <a href="https://www.instagram.com/">
+                                <img class="icon" src="images/footer-img4.jpg" alt="">
+                            </a>
+                            <div class="hover">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+  
+                        </div>
+                        <div class="instagram-item col-4 overlay-wrap">
+                            <a href="https://www.instagram.com/">
+                                <img class="icon" src="images/footer-img5.jpg" alt="">
+                            </a>
+                            <div class="hover">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+  
+                        </div>
+                        <div class="instagram-item col-4 overlay-wrap">
+                            <a href="https://www.instagram.com/">
+                                <img class="icon" src="images/footer-img6.jpg" alt="">
+                            </a>
+                            <div class="hover">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+  
+                        </div>
+                      </div>
+  
+                    </div>
+                </div>
+            </div>
+  
+        </div>
+        <div class="footer-bottom">
+            <div class="left">
+                <div class="wpb_wrapper">
+                    <p>© 2019 Spyropress. All Rights Reserved</p>
+                </div>
+            </div>
+            <div class="right">
+  
+                <div class="condition">
+                    <a href="#">
+                        Term & Conditions
+                    </a>
+                </div>
+                <div class="condition">
+                    <a href="#">Privacy Policy</a>
+                </div>
+  
+            </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  <script>   
+    var acc = document.getElementsByClassName("accordion");
+     var i;
+     
+     for (i = 0; i < acc.length; i++) {
+       acc[i].addEventListener("click", function() {
+         this.classList.toggle("active");
+         var panel = this.nextElementSibling;
+         if (panel.style.maxHeight) {
+           panel.style.maxHeight = null;
+         } else {
+           panel.style.maxHeight = panel.scrollHeight + "px";
+         } 
+       });
+     }
+     </script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+  <script src="js/faq.js"></script>
+</body>
+
+</html>
