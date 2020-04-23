@@ -1,6 +1,9 @@
 * {
     box-sizing: inherit;
 }
+body{
+    background-color:white !important;
+}
 
 .page-title-wrapper {
     background-image: url(../images/department-page-title.jpg);
@@ -85,19 +88,6 @@
     padding-right: 0;
 }
 
-@media (min-width: 768px) {
-
-    #empty-space {
-        height: 194px;
-    }
-}
-
-@media (min-width: 320px) {
-
-    #empty-space {
-        height: 130px;
-    }
-}
 
 .align-left {
     text-align: left;
@@ -256,7 +246,9 @@ ul {
     .col-sm-12 {
         width: 100%;
     }
+    
 }
+
 
 @media (min-width: 992px) {
 
@@ -299,19 +291,6 @@ ul {
     border-right: #e6e6e6 solid 1px;
 }
 
-@media (min-width: 768px) {
-
-    #rempty-space {
-        height: 55px;
-    }
-}
-
-@media (min-width: 320px) {
-
-    #empty-space {
-        height: 0px;
-    }
-}
 
 .isotope-item {
 
@@ -372,7 +351,7 @@ ul {
 
 /* SİDEBAR */
 .department-list {
-    margin-bottom: 72px;
+    margin-bottom: 40px;
 }
 
 .d-title:after {
@@ -532,7 +511,7 @@ font-weight: 500;}
     padding: 5px 23px;
 }
 form input[type="text"] ,  select {
-    width: 80%;
+    width: 100%;
     padding: 11px 20px;
     font-size: 14px;
     line-height: 28px;
@@ -564,17 +543,14 @@ form input[type="text"] ,  select {
     box-shadow: none;
    
 }
-#sidebar-area select {
-    border: 1px solid #ebebeb;
-    background: #fff url(../images/arrow-select.png) no-repeat right;
-}
+
 .btn1{
     cursor: pointer;
     display: inline-block;
 
     text-align: center;
     line-height: 1;
-    width: 55%;
+    width: 100%;
     vertical-align: top;
     position: relative;
     overflow: hidden;
@@ -661,4 +637,44 @@ form input[type="text"] ,  select {
     padding-bottom: 1px;
 }
 
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+   .full-page{
+       width: 1153px;
+
+   }
+   .dental-row{
+       display: block !important;
+   }
+    }
+    @media (min-width: 768px) {
+
+        #rempty-space {
+            height: 55px;
+        }
+    }
+    
+    @media (min-width: 320px) {
+    
+        #empty-space {
+            height: 0px;
+        }
+    }
+    @media (min-width: 768px) {
+
+        #empty-space {
+            height: 194px;
+        }
+    }
+    
+    @media (min-width: 320px) {
+    
+        #empty-space {
+            height: 130px;
+        }
+    }
+    
+  
 

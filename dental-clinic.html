@@ -4,21 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Clinic</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-   
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/plugins/calendar.css">
         <link rel="stylesheet" href="css/departments.css">
     <link rel="stylesheet" href="css/dental-clinic.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
-   
-
-
     <script src="https://kit.fontawesome.com/54e137977b.js" crossorigin="anonymous"></script>
-    <title>Dental Clinic</title>
+    
 </head>
-
+    
 <body>
+      
+      
     <div class="full-page">
 
         <!-- HEADER & NAVIGATION BAR -->
@@ -158,6 +158,8 @@
              </div>
          </div>
      </header>
+  
+
    
     
      <!-- TITLE SECTION -->
@@ -658,7 +660,8 @@
                         </div>
                         <div class="col-sm-12">
                             <label>Date *</label>
-                            <input type="text" aria-required="true" class="form-control fa-app-date hasDatepicker " placeholder="dd-mm-yy" >
+                            <!-- <input type="text" aria-required="true" class="form-control fa-app-date hasDatepicker " placeholder="dd-mm-yy" > -->
+                            <input type="text" id="datepicker" placeholder="dd-mm-yy">
 
 
                         </div>
@@ -747,6 +750,8 @@
      </div>
     </div>
      </main>
+     
+ 
        <!-- Footer -->
        <div class="footer">
         <div class="container">
@@ -920,12 +925,15 @@
         </div>
     </div>
     </div>
+    
    
  
    
     
  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/dental.js"></script>
     <script src="js/script.js"></script>
 
