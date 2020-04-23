@@ -637,20 +637,20 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <label>Full Name *</label>
-                            <input type="text" aria-required="true" size="30" class="form-control fa-app-name" placeholder="Name">
+                            <input type="text"  size="30" class="form-control fa-app-name" id="name" placeholder="Name" required>
 
                         </div>
                         <div class="col-sm-12">
                             <label>Your Email *</label>
-                            <input type="text" aria-required="true" size="30" class="form-control fa-app-email" placeholder="Email">
+                            <input  type="text" size="30" class="form-control fa-app-email" id="name" placeholder="Email" required>
                         </div>
                         <div class="col-sm-12">
                             <label>Your Phone *</label>
-                            <input type="text" aria-required="true" size="30" class="form-control fa-app-phone" placeholder="Phone">
+                            <input type="text" size="30" class="form-control fa-app-phone" id="name" placeholder="Phone" required>
                         </div>
                         <div class="col-sm-12">
                             <label>Department *</label>
-                            <select name="fa-app-department" id="fa-app-department">
+                            <select name="fa-app-department" id="fa-app-department" id="name" required>
                                 <option value="">Select Department</option>
                                 <option value="Cardiology">Cardiology</option>
                                 <option value="Neurology">Neurology</option>
@@ -660,15 +660,20 @@
                         </div>
                         <div class="col-sm-12">
                             <label>Date *</label>
-                            <!-- <input type="text" aria-required="true" class="form-control fa-app-date hasDatepicker " placeholder="dd-mm-yy" > -->
-                            <input type="text" id="datepicker" placeholder="dd-mm-yy">
+                           
+                            <input type="text" id="datepicker" id="name" placeholder="dd-mm-yy" required>
 
 
                         </div>
                         <div class="col-sm-12">
                             <label>Time *</label>
-                            <select name="fa-app-time" id="fa-app-time">
+                            <select name="fa-app-time" id="fa-app-time" class="time">
                                 <option value>Time *</option>
+                                <option class="date" value>08:00 - 10:00</option>
+                                <option class="date" value>10:00 - 12:00</option>
+                                <option class="date" value>12:00 - 14:00</option>
+                                <option class="date" value>16:00 - 18:00</option>
+                                <option class="date" value>18:00 - 20:00</option>
                             </select>
                         </div>
 
@@ -678,11 +683,15 @@
                     </div>
                     <div class="row" >
                         <div class="col-sm-12 text-center">
-                            <input type="submit" value="Book now" class="btn1 submit">
+                            <input type="button" value="Book now" class="btn1 submit">
                         </div>
                     </div>
-                    <div class="wait"></div>
-                    <div class="modal"></div>
+                    <div class="wait">
+                     
+                    </div>
+                    <div class="modal">
+                      
+                    </div>
                     
                     
                     </form>
