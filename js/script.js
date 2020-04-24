@@ -28,6 +28,47 @@ $(document).on('click', '.header-cart', function () {
     $('.mini-cart').toggle();
 })
 
+
+
+/* ==== HOME MAIN SLIDER ==== */
+let sliderCount = 0;
+let timer;
+function setTimer() {
+    if (sliderCount == ($("#home-slider li").length - 1)) {
+        sliderCount = 0;
+    } else {
+        sliderCount++;
+    }
+    $('.overlay-dark').fadeIn(1000).fadeOut(600);
+    $("#home-slider li.active-main").removeClass("active-main");
+    $("#home-slider li").eq(sliderCount).addClass("active-main");
+    $('.layers-div').fadeIn(1000);
+    $('.tp-bullet.selected').removeClass('selected');
+    $('.tp-bullet').eq(sliderCount).addClass('selected');
+};
+timer = setInterval(setTimer, 8000);
+setTimer();
+
+$(document).on('click', '.tp-bullet', function () {
+    $('.tp-bullet.selected').removeClass('selected');
+    $(this).addClass('selected');
+    let index = $('.tp-bullet.selected').attr('data-index');
+    let activeSlide = $(`#home-slider li[data-index="${index}"]`);
+    $("#home-slider li.active-main").removeClass("active-main");
+    activeSlide.addClass('active-main');
+})
+
+/* ==== VIDEO MODAL ==== */
+$(document).on('click', '.cms-video-popup', function () {
+    $('.video-modal').show(1000);
+    $(document).on('click', '.video-close', function () {
+    $('.video-modal').hide();
+    })
+})
+
+
+
+
 /* ==== BUTTON TO TOP ==== */
 let ScrolledAmount = 600;
 $(window).on("scroll", function () {
@@ -44,27 +85,7 @@ $(document).on("click", '.back-top', function () {
     return false;
 });
 
-//     /*== HOME BLOGS CAROUSEL ==*/
-// $('.home-blogs').owlCarousel({
-//             loop: true,
-//             autoplay:true,
-//             autoplayTimeout:5000,
-//             autoplayHoverPause:true,
-//             margin:30,
-//             nav: true,
-//             dots: true,
-//             responsive:{
-//                 1200:{
-//                     items: 3,
-//                 },
-//                 991:{
-//                     items: 2,
-//                 },
-//                 813:{
-//                     items: 1,
-//                 },
-//             }
-//         })
+
 
 
 })

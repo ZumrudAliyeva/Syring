@@ -219,6 +219,7 @@ margin-bottom: 15px;
     font-weight: 600;
     color: #303030;
     padding-top: 9px;
+    padding-left: 0 !important;
 }
 .content-right .dr-footer {
     padding-top: 33px;
