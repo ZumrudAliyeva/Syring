@@ -8,30 +8,52 @@ $( function() {
     $(".date").css("display","block");
     
   })
-
  
-  // $(document).on("click", ".btn1",function () {
-    
-  // $('input[type="button"]').attr('disabled', true);
-
   
-  //     var text_value = $('input[name="textField"]').val();
-  //     if ( text_value != '') {
-  //         $('input[type="button"]').attr('disabled', false);
-  //     } else {
-  //         $('input[type="button"]').attr('disabled', true);
-  //     }
+  
+  // $('.btn1').attr('disabled',true);
+  $('.btn1').click(function(){
+    let name = $(".name").val();
+    let email = $(".email").val();
+    let phone = $(".phone").val();
+    let date = $(".Date").val();
+    if (name && email && phone && date ) {
+     $(".wait").css("display" , "block")
+  }
+
+  $('.name').val('');
+  $('.email').val('');
+  $('.phone').val('');
+  $('.Date').val('');
+
+
+      })
+      
+          /* =====================================
+             Fancy Box Image viewer
+      ====================================== */
+    $('[data-fancybox]').fancybox({
+      'transitionIn': 'elastic',
+      'transitionOut': 'elastic',
+      'speedIn': 600,
+      'speedOut': 200,
+      buttons: [
+          'slideShow',
+          'fullScreen',
+          'thumbs',
+          'share',
+          // 'download',
+          'zoom',
+          'close'
+      ],
+  });
+
+
   
 
       
      
    
     
-  // })
-  $(document).on("click", ".btn1",function () {
-
-    $(".wait").css("display","block");
-    
-  })
 
 } );

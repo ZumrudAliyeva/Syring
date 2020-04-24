@@ -572,6 +572,9 @@ form input[type="text"] ,  select {
     background: black;
     color: white;
 }
+.social-list a{
+    color: inherit !important;
+}
 .submit {
     margin-top: 6px;
     margin-bottom: 0px;
@@ -665,6 +668,11 @@ form input[type="text"] ,  select {
    .dental-row{
        display: block !important;
    }
+   .footer{
+       width: 1152px;
+   }
+   
+  
     }
     @media (min-width: 768px) {
 

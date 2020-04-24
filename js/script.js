@@ -45,26 +45,26 @@ $(document).on("click", '.back-top', function () {
 });
 
 //     /*== HOME BLOGS CAROUSEL ==*/
-$('.home-blogs').owlCarousel({
-            loop: true,
-            autoplay:true,
-            autoplayTimeout:5000,
-            autoplayHoverPause:true,
-            margin:30,
-            nav: true,
-            dots: true,
-            responsive:{
-                1200:{
-                    items: 3,
-                },
-                991:{
-                    items: 2,
-                },
-                813:{
-                    items: 1,
-                },
-            }
-        })
+// $('.home-blogs').owlCarousel({
+//             loop: true,
+//             autoplay:true,
+//             autoplayTimeout:5000,
+//             autoplayHoverPause:true,
+//             margin:30,
+//             nav: true,
+//             dots: true,
+//             responsive:{
+//                 1200:{
+//                     items: 3,
+//                 },
+//                 991:{
+//                     items: 2,
+//                 },
+//                 813:{
+//                     items: 1,
+//                 },
+//             }
+//         })
 
 
 })

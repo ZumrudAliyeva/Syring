@@ -452,6 +452,11 @@ h5 {
 .column>p{
     width: 110px;
 }
+.hover {
+    position: absolute;
+    top: 23px !important;
+    left: 23px !important; }
+
 
 }
 
