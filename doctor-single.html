@@ -332,7 +332,7 @@
                         </div>
                         <!-- CONSULTATION FORM -->
                         <div id="form-section" class="col-lg-12 dr-consultation-form">
-                            <form action="" method="post" class="contact-form" novalidate="novalidate">
+                            <form action="#" method="post" class="contact-form" novalidate="novalidate" onsubmit="return false;">
                                 <div class="row">
                                     <div class="col-12 col-lg-6">
                                         <label> Full Name* </label><br>
@@ -368,7 +368,8 @@
                                     <span class="ajax-loader"></span></p>
                                 <p class="note">Your email address will not be published. Required fields are marked *
                                 </p>
-                                <div class="response-output"></div>
+                                <div class="response-output-succes">Thank you for your message. It has been sent.</div>
+                                <div class="response-output-error">One or more fields have an error. Please check and try again.</div>
                             </form>
                         </div>
                     </div>
@@ -566,6 +567,7 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/contact-us.js"></script>
     <script src="js/script.js"></script>
     <script>
         AOS.init();
