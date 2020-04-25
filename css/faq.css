@@ -327,11 +327,11 @@ li.active_c .title-text h5 {
   }
 
   .vc_tta-tabs-container {
-   width: 75%;
+   width: auto !important;
   }
 
   .list {
-    width: 85%;
+    width: 210px;
     height: auto;
   }
 
@@ -342,6 +342,9 @@ li.active_c .title-text h5 {
   #accordion {
     width: 100%;
     padding-left: 0;
+  }
+  .full-accordion{
+    width: auto !important;
   }
 
   .wrapper {
@@ -382,4 +385,87 @@ li.active_c .title-text h5 {
   .cont-social-list {
     margin-bottom: 30px;
   }
+}
+@media (max-width: 375px) {
+  .vc_column-inner {
+  width: 375px;
+  display: flex;
+  flex-wrap: wrap;
+  }
+  .vc_tta-tabs-container {
+    padding-left: 15px !important;
+    width: 100% !important;
+}
+.list {
+  width: 100%;
+  height: auto;
+}
+.vc_tta-panels{
+  width: 330px;
+    padding-left: 15px;
+    padding-right: 0;
+
+}
+.tt-body{
+  width: 345px;
+}
+.full-accordion {
+  padding-left: 0 !important;
+  width: 330px !important;
+}
+.tt-body h3{
+  font-size: 20px;
+  width: 230px;
+  padding-left: 15px;
+  color: black;
+}
+.tt-body p{
+  width: 269px;
+  padding-left: 15px;
+}
+.appointment{
+  padding: 0px 0 38px;
+}
+.book{
+  height: 252px;
+}
+.content-area{
+  width: 375px;
+  padding-left: 0;
+}
+.full-page{
+  width: 375px !important;
+}
+/* foooter */
+.row_list{
+  display: block !important;
+}
+.inner {
+  width: 375px !important;
+  padding-left: 15px !important;
+}
+
+h3.footer-title{
+  padding-top: 30px !important;
+  padding-bottom: 0 !important;
+
+}
+.column p{
+  width: auto !important;
+}
+.container{
+  padding-left: 0 !important;
+}
+.layout-default{
+  width: 375px !important;
+  padding-left: 30px !important;
+  height: 250px !important;
+}
+ .layout-default>.row{
+   width: 345px !important;
+ }
+ .social-icon{
+   justify-content: space-around;
+   width: 175px !important;
+ }
 }

@@ -50,27 +50,28 @@ $(document).on("click",".md-close",function () {
           /* =====================================
              Fancy Box Image viewer
       ====================================== */
-
+  
   $('[data-fancybox = "images"]').fancybox({
    
           'transitionIn': 'elastic',
         'transitionOut': 'elastic',
         'speedIn': 600,
          'speedOut': 200,
-        buttons: [
-             'slideShow',
-              'fullScreen',
-              'thumbs',
-           
+         buttons: [
+           'slideShow',
+           'fullScreen',
+           'thumbs',
              'zoom',
-             'close'
+             'close',
+         
+          
         ],
       
   })
 
       
      
-   
+ 
     
 
 } );

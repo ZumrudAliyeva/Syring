@@ -9,7 +9,15 @@ body{
     background-image: url(../images/department-page-title.jpg);
     padding: 0;
 }
+.header-top{
+    background: #FFFFFF !important;
 
+        color: #777 !important
+}
+#header{
+    border-top: #e6e6e6 solid 1px !important;
+    box-shadow: none !important;
+}
 .department-page-title-wrap {
     width: 40%;
     background: #fff;
