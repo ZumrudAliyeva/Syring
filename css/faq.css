@@ -135,7 +135,7 @@ body {
   color: #444;
   cursor: pointer;
   padding: 18px;
-  width: 90%;
+  width: 100%;
   border: none;
   text-align: left;
   outline: none;
@@ -178,7 +178,20 @@ body {
   transition: max-height 0.2s ease-out;
 
 }
-
+.tt-body{
+  padding-top: 20px;
+}
+.tt-body h3{
+  padding-left: 10px;
+  font-size: 20px;
+  color: black;
+}
+.tt-body p a{
+  color: #303030;
+}
+.tt-body p{
+  padding-left: 10px;
+}
 .vc_tta-panels {
   padding: 29px 45px 46px;
   background: white;
@@ -378,6 +391,9 @@ li.active_c .title-text h5 {
   .column>p {
     width: 110px;
   }
+  .full-page{
+    overflow: hidden;
+  }
 
 }
 
@@ -436,6 +452,10 @@ li.active_c .title-text h5 {
 .full-page{
   width: 375px !important;
 }
+.accordion{
+  width: 85% !important;
+}
+
 /* foooter */
 .row_list{
   display: block !important;
@@ -468,4 +488,5 @@ h3.footer-title{
    justify-content: space-around;
    width: 175px !important;
  }
+
 }
