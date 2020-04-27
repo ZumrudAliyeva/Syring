@@ -1,5 +1,18 @@
 'use script';
 $(function () {
+
+
+$('.zero').counterUp({
+    delay: 10,
+    time: 1000
+})
+
+
+
+
+
+
+
 /*==== NAVIGATION BAR ====*/
 $(window).scroll(function () {
     let scroll = $(window).scrollTop();
@@ -28,6 +41,29 @@ $(document).on('click', '.header-cart', function () {
     $('.mini-cart').toggle();
 })
 
+$(document).on('mouseenter', '.static-nav .nav-link', function () {
+    $(this).next().show();
+    $(this).next().css('visibility', 'visible');
+    $(this).next().css('top', '101px');
+})
+$(document).on('mouseleave', '.sub-menu', function () {
+    $(this).hide();
+    $(this).css('visibility', 'hidden');
+    $(this).css('top', '200px');
+})
+
+
+$(document).on('keyup', '.search-field', function () {
+    let inputValue = $(this).val().toLowerCase();
+    $(".crud-body tr").children().eq(1).filter(function() {
+        $(this).parents('html').toggle($(this).text().toLowerCase().indexOf(inputValue) > -1)
+      });
+})
+
+
+
+
+
 
 
 /* ==== HOME MAIN SLIDER ==== */
@@ -42,7 +78,10 @@ function setTimer() {
     $('.overlay-dark').fadeIn(1000).fadeOut(600);
     $("#home-slider li.active-main").removeClass("active-main");
     $("#home-slider li").eq(sliderCount).addClass("active-main");
-    $('.layers-div').fadeIn(1000);
+    $('.layers-div').eq(sliderCount).fadeIn(1000);
+    $('.layer-1').eq(sliderCount).slideDown(700);
+    $('.layer-2').eq(sliderCount).slideDown(750);
+    $('.layer-3-button').eq(sliderCount).fadeIn(750);
     $('.tp-bullet.selected').removeClass('selected');
     $('.tp-bullet').eq(sliderCount).addClass('selected');
 };
@@ -56,6 +95,10 @@ $(document).on('click', '.tp-bullet', function () {
     let activeSlide = $(`#home-slider li[data-index="${index}"]`);
     $("#home-slider li.active-main").removeClass("active-main");
     activeSlide.addClass('active-main');
+    $('.layers-div').eq(sliderCount).fadeIn(1000);
+    $('.layer-1').eq(sliderCount).slideDown(700);
+    $('.layer-2').eq(sliderCount).slideDown(750);
+    $('.layer-3-button').eq(sliderCount).fadeIn(750);
 })
 
 /* ==== VIDEO MODAL ==== */
