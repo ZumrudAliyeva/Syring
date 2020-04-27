@@ -10,8 +10,8 @@ $('.home-blogs').owlCarousel({
     autoplayTimeout:5000,
     autoplayHoverPause:true,
     margin:30,
-    nav: true,
-    dots: true,
+    nav: false,
+    dots: false,
     responsive:{
         1200:{
             items: 3,
