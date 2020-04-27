@@ -383,7 +383,36 @@ table.order_details th {
 .order_details tfoot td {
     padding: 13px 15px;
 }
+@media (max-width: 768px) {
+    /* footer */
+    .row_list {
+       width: 720px;
+   }
 
+
+   .footer .inner {
+       width: 180px !important;
+       padding-left: 15px !important;
+   }
+
+   .text-content {
+       width: auto !important;
+   }
+
+   .layout-default {
+       width: 150px !important;
+   }
+
+   .social-icon {
+       display: flex;
+       justify-content: space-between;
+   }
+
+   .column>p {
+       width: 110px;
+   }
+
+}
 
 
 @media (max-width: 375px) {
@@ -419,7 +448,7 @@ table.order_details th {
 .row_list{
     display: block !important;
   }
-  .inner {
+  .footer .inner {
     width: 375px !important;
     padding-left: 15px !important;
   }
@@ -450,9 +479,5 @@ table.order_details th {
    }
 }
 
-@media (min-width: 1200px){
 
-    .container {
-        max-width: 1200px;
-    }
-}
+
