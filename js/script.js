@@ -43,12 +43,12 @@ $(document).on('click', '.header-cart', function () {
 
 $(document).on('mouseenter', '.static-nav .nav-link', function () {
     $(this).next().show();
-    $(this).next().css('visibility', 'visible');
+    // $(this).next().css('visibility', 'visible');
     $(this).next().css('top', '101px');
 })
 $(document).on('mouseleave', '.sub-menu', function () {
     $(this).hide();
-    $(this).css('visibility', 'hidden');
+    // $(this).css('visibility', 'hidden');
     $(this).css('top', '200px');
 })
 
@@ -59,8 +59,14 @@ $(document).on('keyup', '.search-field', function () {
         $(this).parents('html').toggle($(this).text().toLowerCase().indexOf(inputValue) > -1)
       });
 })
+/*==== NAVIGATION BAR MOBILE====*/
 
-
+$(document).on('click', '.red-toggle', function () {
+    let sub = $(this).next();
+    
+    $(this).next().toggle();
+    
+})
 
 
 
