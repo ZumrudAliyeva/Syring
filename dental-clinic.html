@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dental Clinic</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/plugins/calendar.css">
@@ -517,7 +520,7 @@
                              <ul class="img-ul" style="position: relative; height: 188px;">
                                  <li class="isotope-item" style="position: absolute; left: 0;
                                  top: 0;">
-                                     <a href="https://syring.spyropress.com/wp-content/uploads/2019/02/gallery6-1170x760.jpg">
+                                     <a  href="https://syring.spyropress.com/wp-content/uploads/2019/02/gallery6-1170x760.jpg" data-fancybox = "image">
                                          <img src="images/gallery6-245x160.jpg" alt="">
                                     
                                     
@@ -526,7 +529,7 @@
                                  </li>
                                  <li class="isotope-item" style="position: absolute; left: 256px;
                                  top: 0;">
-                                     <a href="https://syring.spyropress.com/wp-content/uploads/2019/02/gallery5-1170x760.jpg">
+                                     <a href="https://syring.spyropress.com/wp-content/uploads/2019/02/gallery5-1170x760.jpg" data-fancybox = "image">
                                          <img src="images/gallery5-245x160.jpg" alt="">
                                     
                                     
@@ -534,7 +537,7 @@
                                  </li>
                                  <li class="isotope-item" style="position: absolute; left: 513px;
                                  top: 0;">
-                                     <a href="https://syring.spyropress.com/wp-content/uploads/2019/02/gallery4-1170x760.jpg">
+                                     <a href="https://syring.spyropress.com/wp-content/uploads/2019/02/gallery4-1170x760.jpg" data-fancybox = "image">
                                          <img src="images/gallery4-245x160.jpg" alt="">
                                     
                                     
@@ -637,20 +640,20 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <label>Full Name *</label>
-                            <input class="name"  type="text"  size="30" class="form-control fa-app-name" id="name" placeholder="Name" required>
+                            <input class="name"  type="text"  size="30" class="form-control fa-app-name" id="name" placeholder="Name" required ="required" >
 
                         </div>
                         <div class="col-sm-12">
                             <label>Your Email *</label>
-                            <input class="email"  type="text" size="30" class="form-control fa-app-email" id="name" placeholder="Email" required>
+                            <input class="email"  type="text" size="30" class="form-control fa-app-email" id="name" placeholder="Email" required ="required" >
                         </div>
                         <div class="col-sm-12">
                             <label>Your Phone *</label>
-                            <input class="phone" type="text" size="30" class="form-control fa-app-phone" id="name" placeholder="Phone" required>
+                            <input class="phone" type="text" size="30" class="form-control fa-app-phone" id="name" placeholder="Phone" required ="required" >
                         </div>
                         <div class="col-sm-12">
                             <label>Department *</label>
-                            <select name="fa-app-department" id="fa-app-department" id="name" required>
+                            <select class="department" name="fa-app-department" id="fa-app-department" id="name" >
                                 <option value="">Select Department</option>
                                 <option value="Cardiology">Cardiology</option>
                                 <option value="Neurology">Neurology</option>
@@ -661,7 +664,7 @@
                         <div class="col-sm-12">
                             <label>Date *</label>
                            
-                            <input class="Date" type="text" id="datepicker" id="name" placeholder="dd-mm-yy" required>
+                            <input class="Date" type="text" id="datepicker" id="name" placeholder="dd-mm-yy" >
 
 
                         </div>
@@ -689,8 +692,18 @@
                     <div class="wait">
                      
                     </div>
-                    <div class="modal">
-                        
+                    <div class="fsb-modal">
+                        <div class="modal-show md-modal">
+                            <div class="md-content">
+                                <p class="success">Booking success!!!</p>
+                                <div class="button-request">
+                                    <button class="md-close fa-ok">OK</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="overlay"></div>
+
                       
                     </div>
                     
@@ -934,6 +947,9 @@
             </div>
         </div>
     </div>
+      <!-- BACK TO TOP -->
+      <a href="#" class="back-top back-top-visible"><i class="flaticon-up-arrow"></i></a>
+    </div>
     </div>
     
    
@@ -942,10 +958,11 @@
     
  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/dental.js"></script>
-    <script src="js/script.js"></script>
 
 
 </body>
