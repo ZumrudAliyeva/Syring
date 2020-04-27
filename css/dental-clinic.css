@@ -842,11 +842,7 @@ select {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-    .full-page {
-        width: 768px !important;
-
-    }
-
+   
     .dental-row {
         display: block !important;
     }
@@ -924,6 +920,7 @@ select {
     .img-ul li:nth-child(3) {
         left: 313px !important;
     }
+  
 
     /* footer */
     .row_list {
@@ -953,9 +950,6 @@ select {
         width: 110px;
     }
 
-    /* .full-page {
-        overflow: hidden;
-    } */
 
 }
 
@@ -998,7 +992,7 @@ select {
     }
 
     .full-page {
-        width: auto !important;
+        overflow: hidden;
     }
 
     .d-row {
