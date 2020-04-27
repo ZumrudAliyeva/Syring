@@ -219,6 +219,7 @@ margin-bottom: 15px;
     font-weight: 600;
     color: #303030;
     padding-top: 9px;
+    padding-left: 0 !important;
 }
 .content-right .dr-footer {
     padding-top: 33px;
@@ -490,3 +491,119 @@ blockquote:before {
     margin-bottom: 114px;
     padding-left: 0;
 }
+.find-dr-content-left{
+    padding-top: 114px;
+    padding-right: 30px;
+}
+
+
+/* RESPONSIVITY */
+
+@media (max-width: 768px){
+    .column-inner-dr{
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 53px;
+        height: 360px;
+    }
+}
+ 
+@media (max-width: 375px) {
+    .full-page{
+        overflow: hidden;
+    }
+    .dr-content-left {
+        padding-right: 15px;
+        padding-left: 30px !important;
+     
+    }
+    .column-inner-dr{
+        padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 80px;
+    }
+    .grid-media{
+        width: 100% !important;
+    }
+    .content-right{
+        width: 100%;
+        padding: 0 15px 25px;
+        text-align: left;
+    }
+    .skill{
+        padding-left: 0;
+    }
+    .single-content-left{
+        width: 375px !important;
+    
+    }
+    .col-sm-6 {
+        width: 100% !important;
+    } 
+    .column_inner{
+        width: 375px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #dr-info{
+        width: 375px;
+ 
+    }
+    .d-flex{
+        display: block !important;
+    }
+    #single-content-area {
+        padding-right: 0px;
+        padding-left: 15px;
+    }
+    #form-section{
+        margin-bottom: 25px;
+    }
+    .cta-title{
+        font-size: 30px;
+    }
+    .book-to-appointment{
+        width: 375px !important;
+        padding-left: 20px;
+        padding-right: 15px;
+    }
+    .cta-button{
+        padding-top: 20px;
+    }
+ 
+ 
+    /* foooter */
+.row_list{
+    display: block !important;
+  }
+  .inner {
+    width: 375px !important;
+    padding-left: 15px !important;
+  }
+  
+  h3.footer-title{
+    padding-top: 30px !important;
+    padding-bottom: 0 !important;
+  
+  }
+  .column p{
+    width: auto !important;
+  }
+  .container{
+    padding-left: 0 !important;
+  }
+  .layout-default{
+    width: 375px !important;
+    padding-left: 30px !important;
+    height: 250px !important;
+  }
+   .layout-default>.row{
+     width: 345px !important;
+   }
+   .social-icon{
+     justify-content: space-around;
+     width: 175px !important;
+   }
+}
+ 
+ 
