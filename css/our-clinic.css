@@ -374,6 +374,9 @@ h5 {
         width: 50%;
     }
 
+    .full-page{
+        overflow: hidden;
+    }
     #form-section {
         float: right;
     }
@@ -464,4 +467,141 @@ h5 {
     .cont-social-list {
         margin-bottom: 30px;
     }
+}
+@media (max-width: 375px) {
+    .full-page{
+        overflow: hidden !important ;
+    }
+    .heading{
+        font-size: 30px !important;
+        line-height: 40px !important;
+    }
+    .main-left{
+        padding-left: 0;
+        width: 375px;
+        margin-left: -15px;
+        margin-right: -15px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 82px;
+    }
+    #main{
+        padding-top: 0 !important;
+        display: block !important;
+    }
+    .gallery-list{
+        height: 1057px !important;
+    }
+    .img1{
+        margin-top: 39px !important;
+        margin-right: -64px;
+        z-index: 100;
+    }
+    .main-right{
+        width: 100% !important;
+    }
+    .gallery-list>li>img {
+      width: 100% !important;
+      height: auto !important;
+    }
+    .img2{
+        position: absolute;
+        left: 0px !important;
+        top: 548px !important;
+    
+    }
+    .main-content-img{
+        width: 375px !important; 
+        height: 200px !important;
+    
+    }
+    .section1{
+        width: 375px !important;
+        height: auto !important;
+    }
+    .content_2{
+        width: 375px;
+        display: block !important;
+    }
+    .content-left{
+        width: 100% !important;
+        padding-left: 0 !important;
+    }
+    .content-right{
+        width: 100%;
+        text-align: left !important;
+        padding: 0 !important;
+    }
+    .info-box{
+        width: 345px !important;
+        padding-left: 0 !important;
+    }
+    .left{
+        padding-left: 0 !important;
+    }
+    .content_3{
+        width: 375px !important;
+    }
+    .img-list{
+        padding-left: 30px !important;
+        padding-right: 15px !important;
+        display: block !important;
+    }
+    .img-list div{
+        width: 345px;
+        margin-top: 15px;
+    }
+    .list{
+        width: 100% !important;
+        height: auto;
+    }
+    .our-clinic-img{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        display: block !important;
+    }
+    .clinic{
+        width: 100% !important;
+        height: auto;
+    }
+    /* foooter */
+    .row_list {
+        display: block !important;
+    }
+
+    .footer .inner {
+        width: 375px !important;
+        padding-left: 15px !important;
+    }
+
+    h3.footer-title {
+        padding-top: 30px !important;
+        padding-bottom: 0 !important;
+
+    }
+
+    .column p {
+        width: auto !important;
+    }
+
+    .container {
+        padding-left: 0 !important;
+    }
+
+    .layout-default {
+        width: 375px !important;
+        padding-left: 30px !important;
+        height: 250px !important;
+    }
+
+    .layout-default>.row {
+        width: 345px !important;
+    }
+
+    .social-icon {
+        justify-content: space-around;
+        width: 175px !important;
+    }
+
+   
 }

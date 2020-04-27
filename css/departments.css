@@ -360,3 +360,134 @@ h3 {
     padding-right: 84.5px;
     background: #007DF2;
 }
+/* RESPONSIVITY */
+
+@media (max-width: 768px) {
+    .container{
+        max-width: 720px !important;
+    }
+    .row{
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+    }
+    .info , .Departments{
+        width: 720px !important;
+    }
+    .Departments .inner{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .Departments .wpb_wrapper .row{
+        width: 690px !important;
+    }
+    /* footer */
+    .row_list {
+        width: 720px;
+      }
+    .appointment{
+      width: auto;
+      height: 203px;
+    }
+    
+      .footer .inner {
+        width: 180px !important;
+        padding-left: 15px !important;
+      }
+    
+      .text-content {
+        width: auto !important;
+      }
+    
+      .layout-default {
+        width: 150px !important;
+      }
+    
+      .social-icon {
+        display: flex;
+        justify-content: space-between;
+      }
+    
+      .column>p {
+        width: 110px;
+      }
+      .full-page{
+        overflow: hidden;
+      }
+    
+
+}
+@media (max-width: 375px) {
+    .vc_col-sm-6 {
+        width: 100% !important;
+    }
+    
+    .vc_column_container>.vc_column-inner {
+        padding-left: 0 !important;
+      
+    }
+    .info{
+        width: 375px !important;
+        display: block !important;
+    }
+    .heading{
+        font-size: 30px !important;
+        line-height: 40px !important;
+    }
+    .Departments{
+        width: 375px !important;  
+    }
+    .Departments .wpb_wrapper .row {
+       width: 375px  !important;
+       padding-right: 30px !important;
+    }
+    .appointment{
+        padding: 0px 0 38px;
+        height: 254px !important;
+        width: 375px !important;
+      }
+      .book{
+        height: 252px;
+      }
+      .content-area{
+        width: 375px;
+        padding-left: 30px !important;
+      }
+      /* foooter */
+.row_list{
+    display: block !important;
+  }
+  .footer .inner {
+    width: 375px !important;
+    padding-left: 15px !important;
+  }
+  
+  h3.footer-title{
+    padding-top: 30px !important;
+    padding-bottom: 0 !important;
+  
+  }
+  .column p{
+    width: auto !important;
+  }
+  .container{
+    padding-left: 0 !important;
+  }
+  .layout-default{
+    width: 375px !important;
+    padding-left: 30px !important;
+    height: 250px !important;
+  }
+   .layout-default>.row{
+     width: 345px !important;
+   }
+   .social-icon{
+     justify-content: space-around;
+     width: 175px !important;
+   }
+  
+  
+
+
+
+
+}
