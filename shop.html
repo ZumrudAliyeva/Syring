@@ -1,6 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +11,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/shop.css">
-
+ 
     <title>Products – Syring | Medical Clinic </title>
 </head>
-
+ 
 <body>
     <div class="full-page">
         <!-- HEADER & NAVIGATION BAR -->
@@ -119,6 +120,7 @@
                                     <a href="#header-search" class="header-search">
                                         <i class="fab fa-sistrix"></i>
                                     </a>
+                                    <!-- search modal -->
                                     <div id="header-search-modal"
                                         class="mfp-hide  red-animation fall-perspective animate">
                                         <div class="search-modal-content">
@@ -134,14 +136,21 @@
                                         </div>
                                         <span class="modal-close"><i class="fas fa-times"></i></span>
                                     </div>
+                                    <!-- CART WIDGET -->
                                     <a href="#header-cart" class="header-icon header-cart">
                                         <i class="fas fa-shopping-cart shopping-cart"></i>
                                         <span class="cart_total">0</span>
                                     </a>
-                                    <div class="mini-cart mousewheel open">
+                                    <div class="mini-cart mousewheel open" >
+                                        <ul class="cart_list"></ul>
                                         <div class="mousewheel-inner widget_shopping_cart">
-                                            <p class="woocommerce-mini-cart__empty-message">No products in the basket.
-                                            </p>
+                                            <p class="woocommerce-mini-cart__total sub-total">
+                                                <strong>Subtotal:</strong><span class="Price-amount amount total-span">
+                                                <span class="currencySymbol">$</span></span></p>
+                                            <p class="woocommerce-mini-cart__buttons buttons">
+                                            <a href="https://syring.spyropress.com/cart/" class="button wc-forward">View basket</a>
+                                            <a href="https://syring.spyropress.com/checkout/" class="button checkout wc-forward">Checkout</a></p>
+                                            <p class="woocommerce-mini-cart__empty-message empty-msg">No products in the basket.</p>
                                         </div>
                                     </div>
                                     <a href="javascript:void(0)" id="menu-mobile"
@@ -184,14 +193,36 @@
                                 <div class="clearfix">
                                     <div class="product-img" style="width: 253px; height:336px ;">
                                         <img width="253" height="337" src="images/product10.jpg" alt="">
-                                        <div class="attr"></div>
+                                        <span class="onsale">-50%</span>
+                                        <div class="list-attrs d-flex justify-content-around">
+                                            <div class="attr-icon add-to-cart-btn" aria-label="Add to basket">
+                                                <a href="#" data-quantity="1" class="add_to_cart" data-product_id="1763" data-product_sku="" rel="nofollow"><i class="fas fa-shopping-basket attr-i"></i></a>
+                                            </div>
+                                            <div class="attr-icon wishlist-icon">
+                                                <a href="#" class="woosw-btn"><i class="far fa-heart attr-i"></i></a>
+                                            </div>
+                                            <div class="attr-icon compare-icon">
+                                                <a class="compare"><i class="fas fa-exchange-alt attr-i"></i></a>
+                                            </div>
+                                        </div>
+ 
                                     </div>
                                     <div class="product-content">
-                                        <h5 class="content-title">Lidocaine  Hydrochloride Injection</h5>
+                                        <h5 class="content-title">Omron 3 Series Blood  Pressure</h5>
                                         <span class="pro-price">
-                                            <span>$</span>
+                                            <del class="del">
 
-                                            39.99
+                                                <span class="sale">
+                                                    <span>$</span>
+                                                    39.99
+                                                </span>
+                                            </del>
+                                            <ins>
+                                                <span>
+                                                    <span>$</span>
+                                                20.00
+                                                </span>
+                                            </ins>
                                         </span>
                                     </div>
                                 </div>
@@ -200,13 +231,25 @@
                                 <div class="clearfix">
                                     <div class="product-img" style="width: 253px; height:336px ;">
                                         <img width="253" height="337" src="images/product8.jpg" alt="">
-                                        <div class="attr"></div>
+ 
+                                        <div class="list-attrs d-flex justify-content-around">
+                                            <div class="attr-icon add-to-cart-btn" aria-label="Add to basket">
+                                                <a href="#" data-quantity="1" class="add_to_cart" data-product_id="1763" data-product_sku="" rel="nofollow"><i class="fas fa-shopping-basket attr-i"></i></a>
+                                            </div>
+                                            <div class="attr-icon wishlist-icon">
+                                                <a href="#" class="woosw-btn"><i class="far fa-heart attr-i"></i></a>
+                                            </div>
+                                            <div class="attr-icon compare-icon">
+                                                <a class="compare"><i class="fas fa-exchange-alt attr-i"></i></a>
+                                            </div>
+                                        </div>
+ 
                                     </div>
                                     <div class="product-content">
-                                        <h5 class="content-title">Lidocaine  Hydrochloride Injection</h5>
+                                        <h5 class="content-title">A Sialkot Surgical Instruments</h5>
                                         <span class="pro-price">
                                             <span>$</span>
-
+ 
                                             39.99
                                         </span>
                                     </div>
@@ -216,14 +259,26 @@
                                 <div class="clearfix">
                                     <div class="product-img" style="width: 253px; height:336px ;">
                                         <img width="253" height="337" src="images/product7.jpg" alt="">
-                                        <div class="attr"></div>
+ 
+                                        <div class="list-attrs d-flex justify-content-around">
+                                            <div class="attr-icon add-to-cart-btn" aria-label="Add to basket">
+                                                <a href="#" data-quantity="1" class="add_to_cart" data-product_id="1763" data-product_sku="" rel="nofollow"><i class="fas fa-shopping-basket attr-i"></i></a>
+                                            </div>
+                                            <div class="attr-icon wishlist-icon">
+                                                <a href="#" class="woosw-btn"><i class="far fa-heart attr-i"></i></a>
+                                            </div>
+                                            <div class="attr-icon compare-icon">
+                                                <a class="compare"><i class="fas fa-exchange-alt attr-i"></i></a>
+                                            </div>
+                                        </div>
+ 
                                     </div>
                                     <div class="product-content">
-                                        <h5 class="content-title">Lidocaine  Hydrochloride Injection</h5>
+                                        <h5 class="content-title">Blue Stethoscope</h5>
                                         <span class="pro-price">
                                             <span>$</span>
-
-                                            39.99
+ 
+                                            20.00
                                         </span>
                                     </div>
                                 </div>
@@ -232,13 +287,25 @@
                                 <div class="clearfix">
                                     <div class="product-img" style="width: 253px; height:336px ;">
                                         <img width="253" height="337" src="images/product6.jpg" alt="">
-                                        <div class="attr"></div>
+ 
+                                        <div class="list-attrs d-flex justify-content-around">
+                                            <div class="attr-icon add-to-cart-btn" aria-label="Add to basket">
+                                                <a href="#" data-quantity="1" class="add_to_cart" data-product_id="1763" data-product_sku="" rel="nofollow"><i class="fas fa-shopping-basket attr-i"></i></a>
+                                            </div>
+                                            <div class="attr-icon wishlist-icon">
+                                                <a href="#" class="woosw-btn"><i class="far fa-heart attr-i"></i></a>
+                                            </div>
+                                            <div class="attr-icon compare-icon">
+                                                <a class="compare"><i class="fas fa-exchange-alt attr-i"></i></a>
+                                            </div>
+                                        </div>
+ 
                                     </div>
                                     <div class="product-content">
-                                        <h5 class="content-title">Lidocaine  Hydrochloride Injection</h5>
+                                        <h5 class="content-title">Conventional  Insulin Syringes</h5>
                                         <span class="pro-price">
                                             <span>$</span>
-
+ 
                                             39.99
                                         </span>
                                     </div>
@@ -248,14 +315,37 @@
                                 <div class="clearfix">
                                     <div class="product-img" style="width: 253px; height:336px ;">
                                         <img width="253" height="337" src="images/product5.jpg" alt="">
-                                        <div class="attr"></div>
+                                        <span class="onsale">-50%</span>
+ 
+                                        <div class="list-attrs d-flex justify-content-around">
+                                            <div class="attr-icon add-to-cart-btn" aria-label="Add to basket">
+                                                <a href="#" data-quantity="1" class="add_to_cart" data-product_id="1763" data-product_sku="" rel="nofollow"><i class="fas fa-shopping-basket attr-i"></i></a>
+                                            </div>
+                                            <div class="attr-icon wishlist-icon">
+                                                <a href="#" class="woosw-btn"><i class="far fa-heart attr-i"></i></a>
+                                            </div>
+                                            <div class="attr-icon compare-icon">
+                                                <a class="compare"><i class="fas fa-exchange-alt attr-i"></i></a>
+                                            </div>
+                                        </div>
+ 
                                     </div>
                                     <div class="product-content">
-                                        <h5 class="content-title">Lidocaine  Hydrochloride Injection</h5>
+                                        <h5 class="content-title">Family First Aid Kit</h5>
                                         <span class="pro-price">
-                                            <span>$</span>
+                                            <del class="del">
 
-                                            39.99
+                                                <span class="sale">
+                                                    <span>$</span>
+                                                    39.99
+                                                </span>
+                                            </del>
+                                            <ins>
+                                                <span>
+                                                    <span>$</span>
+                                                20.00
+                                                </span>
+                                            </ins>
                                         </span>
                                     </div>
                                 </div>
@@ -264,86 +354,193 @@
                                 <div class="clearfix">
                                     <div class="product-img" style="width: 253px; height:336px ;">
                                         <img width="253" height="337" src="images/product4.jpg" alt="">
-                                        <div class="attr"></div>
+ 
+                                        <div class="list-attrs d-flex justify-content-around">
+                                            <div class="attr-icon add-to-cart-btn" aria-label="Add to basket">
+                                                <a href="#" data-quantity="1" class="add_to_cart" data-product_id="1763" data-product_sku="" rel="nofollow"><i class="fas fa-shopping-basket attr-i"></i></a>
+                                            </div>
+                                            <div class="attr-icon wishlist-icon">
+                                                <a href="#" class="woosw-btn"><i class="far fa-heart attr-i"></i></a>
+                                            </div>
+                                            <div class="attr-icon compare-icon">
+                                                <a class="compare"><i class="fas fa-exchange-alt attr-i"></i></a>
+                                            </div>
+                                        </div>
+ 
                                     </div>
                                     <div class="product-content">
-                                        <h5 class="content-title">Lidocaine  Hydrochloride Injection</h5>
+                                        <h5 class="content-title">Inox Medical Cups</h5>
+                                        <div class="loop-rating">
+                                            <div class="star-rating">
+                                                <span style="width: 90%;" >
+                                                    Rated </span>
+
+                                            </div>
+                                        </div>
                                         <span class="pro-price">
                                             <span>$</span>
-
+ 
                                             39.99
                                         </span>
                                     </div>
                                 </div>
                             </li>
-
+ 
                             <li class="product">
                                 <div class="clearfix">
                                     <div class="product-img" style="width: 253px; height:336px ;">
                                         <img width="253" height="337" src="images/product-single1-370x492.jpg" alt="">
-                                        <div class="attr"></div>
+ 
+                                        <div class="list-attrs d-flex justify-content-around">
+                                            <div class="attr-icon add-to-cart-btn" aria-label="Add to basket">
+                                                <a href="#" data-quantity="1" class="add_to_cart" data-product_id="1763" data-product_sku="" rel="nofollow"><i class="fas fa-shopping-basket attr-i"></i></a>
+                                            </div>
+                                            <div class="attr-icon wishlist-icon">
+                                                <a href="#" class="woosw-btn"><i class="far fa-heart attr-i"></i></a>
+                                            </div>
+                                            <div class="attr-icon compare-icon">
+                                                <a class="compare"><i class="fas fa-exchange-alt attr-i"></i></a>
+                                            </div>
+                                        </div>
+ 
                                     </div>
                                     <div class="product-content">
-                                        <h5 class="content-title">Lidocaine  Hydrochloride Injection</h5>
+                                        <h5 class="content-title">Family First Aid Kit</h5>
                                         <span class="pro-price">
                                             <span>$</span>
-
+ 
                                             39.99
                                         </span>
                                     </div>
                                 </div>
                             </li>
-
+ 
                             <li class="product">
                                 <div class="clearfix">
                                     <div class="product-img" style="width: 253px; height:336px ;">
                                         <img width="253" height="337" src="images/product2.jpg" alt="">
-                                        <div class="attr"></div>
+ 
+                                        <div class="list-attrs d-flex justify-content-around">
+                                            <div class="attr-icon add-to-cart-btn" aria-label="Add to basket">
+                                                <a href="#" data-quantity="1" class="add_to_cart" data-product_id="1763" data-product_sku="" rel="nofollow"><i class="fas fa-shopping-basket attr-i"></i></a>
+                                            </div>
+                                            <div class="attr-icon wishlist-icon">
+                                                <a href="#" class="woosw-btn"><i class="far fa-heart attr-i"></i></a>
+                                            </div>
+                                            <div class="attr-icon compare-icon">
+                                                <a class="compare"><i class="fas fa-exchange-alt attr-i"></i></a>
+                                            </div>
+                                        </div>
+ 
                                     </div>
                                     <div class="product-content">
-                                        <h5 class="content-title">Lidocaine  Hydrochloride Injection</h5>
+                                        <h5 class="content-title">Mouth Moisturizer Oral Gel</h5>
                                         <span class="pro-price">
                                             <span>$</span>
-
+ 
                                             39.99
                                         </span>
                                     </div>
                                 </div>
                             </li>
-
+ 
                             <li class="product">
                                 <div class="clearfix">
                                     <div class="product-img" style="width: 253px; height:336px ;">
                                         <img width="253" height="337" src="images/product3.jpg" alt="">
-                                        <div class="attr"></div>
+ 
+                                        <div class="list-attrs d-flex justify-content-around">
+                                            <div class="attr-icon add-to-cart-btn" aria-label="Add to basket">
+                                                <a href="#" data-quantity="1" class="add_to_cart" data-product_id="1763" data-product_sku="" rel="nofollow"><i class="fas fa-shopping-basket attr-i"></i></a>
+                                            </div>
+                                            <div class="attr-icon wishlist-icon">
+                                                <a href="#" class="woosw-btn"><i class="far fa-heart attr-i"></i></a>
+                                            </div>
+                                            <div class="attr-icon compare-icon">
+                                                <a class="compare"><i class="fas fa-exchange-alt attr-i"></i></a>
+                                            </div>
+                                        </div>
+ 
                                     </div>
                                     <div class="product-content">
                                         <h5 class="content-title">Lidocaine  Hydrochloride Injection</h5>
+                                        <div class="loop-rating">
+                                            <div class="star-rating">
+                                                <span style="width: 90%;" >
+                                                    Rated </span>
+
+                                            </div>
+                                        </div>
                                         <span class="pro-price">
                                             <span>$</span>
-
+ 
                                             39.99
                                         </span>
                                     </div>
                                 </div>
                             </li>
-
+                            <li class="product">
+                                <div class="clearfix">
+                                    <div class="product-img" style="width: 253px; height:336px ;">
+                                        <img width="253" height="337" src="images/product-single1-370x492.jpg" alt="">
+ 
+                                        <div class="list-attrs d-flex justify-content-around">
+                                            <div class="attr-icon add-to-cart-btn" aria-label="Add to basket">
+                                                <a href="#" data-quantity="1" class="add_to_cart" data-product_id="1763" data-product_sku="" rel="nofollow"><i class="fas fa-shopping-basket attr-i"></i></a>
+                                            </div>
+                                            <div class="attr-icon wishlist-icon">
+                                                <a href="#" class="woosw-btn"><i class="far fa-heart attr-i"></i></a>
+                                            </div>
+                                            <div class="attr-icon compare-icon">
+                                                <a class="compare"><i class="fas fa-exchange-alt attr-i"></i></a>
+                                            </div>
+                                        </div>
+ 
+                                    </div>
+                                    <div class="product-content">
+                                        <h5 class="content-title">Family First Aid Kit</h5>
+                                        <span class="pro-price">
+                                            <span>$</span>
+ 
+                                            39.99
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+ 
                         </ul>
                     </div>
+ 
+ 
+                         <div class="pagination">
+                             <ul class="page-numbers">
+                                 <li>
+                                     <span class="page-numbers current">1</span>
 
+                                 </li>
+                                 <li>
+                                     <a class="page-numbers" href="#">2</a>
+                                 </li>
+                                 <li>
+                                     <a class="next page-numbers" href="#">
+                                         <i class="fas fa-angle-right"></i>
+                                     </a>
+                                 </li>
+                             </ul>
 
-
+                         </div>
                 </div>
+
                 <div id="sidebar-area" class="sidebar-area col-lg-3 col-md-4">
-
-
+ 
+ 
                     <div class="sidebar-inner">
                         <aside class="product_search">
                             <h3 class="pro-title">
                                 <span>Search Product</span>
                             </h3>
                             <form role="search" method="get" class="search-p">
-
+ 
                                 <label class="screen-reader-text">Search for:</label>
                                 <input class="search-fields" type="search" placeholder="Search Products">
                               
@@ -354,7 +551,7 @@
                                 <span>Product categories</span>
                             </h3>
                             <ul class="product-categories">
-
+ 
                                 <li class="cat-item cat-item-42">
                                     <a href="#">
                                         Diagnostic
@@ -404,8 +601,8 @@
                                     </a>
                                 </li>
                             </ul>
-
-
+ 
+ 
                         </aside>
                         <aside style="margin-bottom: 45px;">
                             <h3 class="pro-title">
@@ -413,7 +610,7 @@
                             </h3>
                             <form action="" method="get">
                               
-
+ 
                             </form>
                         </aside>
                         <aside>
@@ -436,7 +633,7 @@
                                     <span class="amount">
                                         <span>$</span>
                                         39.99
-
+ 
                                     </span>
                                 </li>
                                 <li>
@@ -454,7 +651,7 @@
                                     <span class="amount">
                                         <span>$</span>
                                         39.99
-
+ 
                                     </span>
                                 </li>
                                 <li>
@@ -472,7 +669,7 @@
                                     <span class="amount">
                                         <span>$</span>
                                         39.99
-
+ 
                                     </span>
                                 </li>
                             </ul>
@@ -503,51 +700,51 @@
                                             <img style="width: 100%; max-width: 100%;" src="images/footer-img1.jpg"
                                                 alt="">
                                         </a>
-
-
+ 
+ 
                                     </div>
                                     <div class="instagram-item col-4 overlay-wrap">
                                         <a href="https://www.instagram.com/p/BiTBm_uFiek/">
                                             <img style="width: 100%; max-width: 100%;" src="images/footer-img2.jpg"
                                                 alt="">
                                         </a>
-
+ 
                                     </div>
                                     <div class="instagram-item col-4 overlay-wrap">
                                         <a href="https://www.instagram.com/p/BiTBm_uFiek/">
                                             <img style="width: 100%; max-width: 100%;" src="images/footer-img3.jpg"
                                                 alt="">
                                         </a>
-
+ 
                                     </div>
                                     <div class="instagram-item col-4 overlay-wrap">
                                         <a href="https://www.instagram.com/p/BiTBm_uFiek/">
                                             <img style="width: 100%; max-width: 100%;" src="images/footer-img4.jpg"
                                                 alt="">
                                         </a>
-
+ 
                                     </div>
                                     <div class="instagram-item col-4 overlay-wrap">
                                         <a href="https://www.instagram.com/p/BiTBm_uFiek/">
                                             <img style="width: 100%; max-width: 100%;" src="images/footer-img5.jpg"
                                                 alt="">
                                         </a>
-
+ 
                                     </div>
                                     <div class="instagram-item col-4 overlay-wrap">
                                         <a href="https://www.instagram.com/p/BiTBm_uFiek/">
                                             <img style="width: 100%; max-width: 100%;" src="images/footer-img6.jpg"
                                                 alt="">
                                         </a>
-
+ 
                                     </div>
                                 </div>
-
-
+ 
+ 
                             </div>
-
+ 
                         </aside>
-
+ 
                     </div>
                 </div>
             </div>
@@ -556,7 +753,7 @@
         <div style="margin-top: 120px;" class="footer">
             <div class="container">
                 <div class="row_list">
-
+ 
                     <div class="wpb_column vc_column_container vc_col-sm-3 vc_col-md-4">
                         <div class="inner">
                             <div class="wpb_wrapper">
@@ -573,7 +770,7 @@
                                 </div>
                             </div>
                         </div>
-
+ 
                     </div>
                     <div class="wpb_column vc_column_container vc_col-sm-3 vc_col-md-4">
                         <div class="inner">
@@ -614,10 +811,10 @@
                                         <br>
                                         United State.
                                         <br>
-
+ 
                                         info@yourdomain.com
                                         <br>
-
+ 
                                         +(123) 1800-88-66
                                     </p>
                                 </div>
@@ -636,14 +833,14 @@
                                 </div>
                             </div>
                         </div>
-
+ 
                     </div>
                     <div class="wpb_column vc_column_container vc_col-sm-3 vc_col-md-4">
                         <div class="wpb_wrapper">
                             <h3 class="footer-title left">Instagram</h3>
                             <div class="red-instagram layout-default footer">
                                 <div class="row-i gutters-5 clearfix">
-
+ 
                                     <div class="instagram-item col-4 overlay-wrap">
                                         <a href="https://www.instagram.com/">
                                             <img class="icon" src="images/footer-img1.jpg" alt="">
@@ -651,7 +848,7 @@
                                         <div class="hover">
                                             <i class="fab fa-instagram"></i>
                                         </div>
-
+ 
                                     </div>
                                     <div class="instagram-item col-4 overlay-wrap">
                                         <a href="https://www.instagram.com/">
@@ -668,7 +865,7 @@
                                         <div class="hover">
                                             <i class="fab fa-instagram"></i>
                                         </div>
-
+ 
                                     </div>
                                     <div class="instagram-item col-4 overlay-wrap">
                                         <a href="https://www.instagram.com/">
@@ -677,7 +874,7 @@
                                         <div class="hover">
                                             <i class="fab fa-instagram"></i>
                                         </div>
-
+ 
                                     </div>
                                     <div class="instagram-item col-4 overlay-wrap">
                                         <a href="https://www.instagram.com/">
@@ -686,7 +883,7 @@
                                         <div class="hover">
                                             <i class="fab fa-instagram"></i>
                                         </div>
-
+ 
                                     </div>
                                     <div class="instagram-item col-4 overlay-wrap">
                                         <a href="https://www.instagram.com/">
@@ -695,14 +892,14 @@
                                         <div class="hover">
                                             <i class="fab fa-instagram"></i>
                                         </div>
-
+ 
                                     </div>
                                 </div>
-
+ 
                             </div>
                         </div>
                     </div>
-
+ 
                 </div>
                 <div class="footer-bottom">
                     <div class="left">
@@ -711,7 +908,7 @@
                         </div>
                     </div>
                     <div class="right">
-
+ 
                         <div class="condition">
                             <a href="#">
                                 Term & Conditions
@@ -720,7 +917,7 @@
                         <div class="condition">
                             <a href="#">Privacy Policy</a>
                         </div>
-
+ 
                     </div>
                 </div>
             </div>
@@ -730,5 +927,6 @@
     <script src="js/script.js"></script>
     <script src="js/shop.js"></script>
 </body>
-
+ 
 </html>
+
