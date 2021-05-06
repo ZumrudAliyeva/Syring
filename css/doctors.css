@@ -1,20 +1,24 @@
-body{
+body {
     background-color: #f5f5f5;
 }
+
 /* PAGE SECTION */
-.page-title-wrapper.doctors{
+.page-title-wrapper.doctors {
     background-image: url(../images/doctor-page-title.jpg);
     padding: 106px 0 114px 0;
 }
+
 .page-title-wrapper:before {
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
+
 .page-title-wrapper.doctors .page-title {
     color: #fff;
     text-align: left;
     font-size: 36px;
     line-height: 45px;
 }
+
 .page-title-wrapper.doctors #breadcrumb {
     color: #fff;
     text-align: right !important;
@@ -22,48 +26,57 @@ body{
     margin-bottom: 0;
     justify-content: flex-end !important;
 }
-#breadcrumb a{
+
+#breadcrumb a {
     color: #fff;
 }
+
 /* MAIN SECTION */
-#doctors-main{
+#doctors-main {
     background: #f5f5f5;
     position: relative;
     padding-top: 0;
 }
-#doctors-main .row{
+
+#doctors-main .row {
     margin-left: -15px;
     margin-right: -15px;
 }
-.dr-content-left{
+
+.dr-content-left {
     padding-top: 114px;
     padding-right: 30px;
     background-color: #f5f5f5;
 }
+
 #dr-content-area {
     background: #fff;
     padding: 114px 15px 120px 30px;
 }
+
 /* FIND-DR */
-.separator{
+.separator {
     width: 20%;
     height: 2px;
     background-color: #007DF2;
     margin-bottom: 32px !important;
 }
-.find-dr-heading{
+
+.find-dr-heading {
     font-size: 24px;
     line-height: 33px;
     margin-bottom: 11px;
     color: #303030;
 }
-#search-dr{
+
+#search-dr {
     text-align: left;
     background: #fff;
     display: block;
     box-shadow: 0 0 20px rgba(48, 48, 48, 0.1);
     padding: 31px 25px 50px;
 }
+
 #search-dr label {
     font-size: 14px;
     font-weight: 600;
@@ -72,7 +85,8 @@ body{
     display: block;
     margin-bottom: 0 !important;
 }
-#search-dr input{
+
+#search-dr input {
     background-color: #f5f5f5;
     border: 1px solid #f5f5f5;
     height: 50px;
@@ -80,19 +94,23 @@ body{
     outline: none;
     width: 100%;
 }
+
 #search-dr input:focus,
 #search-dr input:hover {
     background: #fff;
     border-color: rgba(0, 125, 242, 1);
     color: #007DF2;
 }
-.dr-department-option{
+
+.dr-department-option {
     padding-top: 10px;
 }
-.dr-department-option option{
+
+.dr-department-option option {
     color: #007df2;
 }
-.dr-department-option select{
+
+.dr-department-option select {
     background-color: #f5f5f5;
     border: 1px solid #f5f5f5;
     height: 50px;
@@ -102,12 +120,14 @@ body{
     color: #777;
     margin-bottom: 15px;
 }
+
 .dr-department-option select:focus,
 .dr-department-option select:hover {
     background: #fff;
     border-color: rgba(0, 125, 242, 1);
     color: #007DF2;
 }
+
 .dr-search-submit {
     width: 100%;
     height: 50px;
@@ -120,17 +140,20 @@ body{
     font-weight: 600;
     border-color: rgba(0, 125, 242, 1);
 }
-.dr-search-submit:hover{
+
+.dr-search-submit:hover {
     background-color: #303030 !important;
     border-color: #303030 !important;
     color: #fff !important;
 }
-.dr_column_container{
+
+.dr_column_container {
     margin: 0;
     padding-top: 75px;
     padding-left: 0;
     padding-right: 0;
 }
+
 .column-inner-dr {
     width: 100%;
     box-sizing: border-box;
@@ -143,7 +166,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.column-inner-dr h3{
+
+.column-inner-dr h3 {
     margin: 0 0 15px;
     color: #fff;
     font-family: Poppins;
@@ -151,23 +175,27 @@ body{
     font-size: 24px;
     line-height: 33px;
 }
-.text-box{
+
+.text-box {
     margin-bottom: 35px;
     padding-bottom: 10px;
 }
-.column-inner-dr p{
-margin-bottom: 0;
-font-size: 14px;
-color: #fff;
+
+.column-inner-dr p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #fff;
 }
-.btn-white{
+
+.btn-white {
     background: #fff;
     color: #303030 !important;
     line-height: 1.3;
     padding: 15.5px 35px;
 }
+
 /* DR CONTENT AREA */
-.dr-archive-title{
+.dr-archive-title {
     margin: 0 0 15px !important;
     color: #303030 !important;
     font-family: Poppins;
@@ -175,33 +203,49 @@ color: #fff;
     font-size: 24px;
     line-height: 33px;
 }
-.dr-archive-desc{
-width: 85%;
-margin-top: 15px;
-margin-bottom: 15px;
+
+.dr-archive-desc {
+    width: 85%;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
-.dr-list{
+
+.dr-list {
     margin-top: 44px;
 }
+
 .grid-item-inner {
     padding: 10px 10px 7px 10px;
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
     margin-bottom: 30px;
     border: 1px solid #e7e7e7;
 }
-.grid-media{
+
+.dr-info-box{
+display: none;}
+
+.dr-info-box.active{
+display: inline-block;
+}
+
+.grid-media {
     width: 30.1%;
     box-sizing: border-box;
+    float: left;
 }
-.grid-media img{
+
+.grid-media img {
     width: 100%;
     height: auto;
 }
+
 .content-right {
     width: 69.9%;
     padding: 0 30px 25px;
+    float: left;
 }
+
 .entry-title {
     font-size: 18px;
     font-weight: 600;
@@ -209,21 +253,26 @@ margin-bottom: 15px;
     padding-top: 9px;
     margin-bottom: 5px;
 }
-.entry-title a{
+
+.entry-title a {
     color: #303030 !important;
 }
+
 .content-right .subtitle {
     color: #888;
 }
+
 .content-right .skill {
     font-weight: 600;
     color: #303030;
     padding-top: 9px;
     padding-left: 0 !important;
 }
+
 .content-right .dr-footer {
     padding-top: 33px;
 }
+
 .content-right .dr-footer a {
     border-bottom: #d8d8d8 solid 2px;
     font-size: 15px;
@@ -231,9 +280,11 @@ margin-bottom: 15px;
     color: #303030;
     padding-bottom: 2px;
 }
-.dr-footer a:last-child{
+
+.dr-footer a:last-child {
     margin-left: 30px;
 }
+
 .navigation.pagination {
     padding-top: 45px;
 }
@@ -248,40 +299,112 @@ margin-bottom: 15px;
     background: #fff;
     margin-right: 10px;
 }
+
 .page-numbers.current {
     background: rgba(0, 125, 242, 1) !important;
     color: #fff !important;
     border-color: rgba(0, 125, 242, 1);
 }
-.page-numbers:hover{
+
+.page-numbers:hover {
     background: rgba(0, 125, 242, 1) !important;
     color: #fff !important;
 }
+
+/* MODAL */
+.appointment-modal {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: none;
+    text-align: center;
+    z-index: 99999;
+    overflow: hidden auto;
+    background: rgba(11, 11, 11, 0.95);
+}
+
+.appointment-modal .container {
+    max-width: 730px;
+    margin: 0 auto;
+    background: #fff;
+    position: absolute;
+    left: 22%;
+    top: 100%;
+    padding: 40px 50px 28px;
+    animation-delay: 0.2s;
+    animation-duration: 1s;
+    animation-name: form;
+    animation-fill-mode: forwards;
+}
+
+@keyframes form {
+    0% {
+        top: 100%;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.appointment-modal .container h2 {
+    font-size: 36px;
+    line-height: 52px;
+    margin-bottom: 0;
+}
+
+.appointment-modal .container p {
+    font-size: 15px;
+    line-height: 26px;
+    color: #888;
+    position: relative;
+    position: relative;
+    padding-bottom: 14px;
+}
+
+.appointment-modal form {
+    text-align: left;
+    padding-top: 30px;
+    background: #fff;
+    position: relative;
+}
+
 /* ==================================== */
 /*       Doctor-Single-John Harry       */
 /* ==================================== */
-#single-content-area{
+#single-content-area {
     padding-right: 30px;
     padding-left: 15px;
 }
-.single-content-left{
+
+.single-content-left {
     padding-right: 30px;
     padding-left: 0;
 }
-#dr-info{
+
+#dr-info {
     padding: 0;
 }
-.single-img{
+
+.single-img {
     margin-bottom: 35px;
     margin-top: 120px;
     display: inline-block;
     vertical-align: top;
 }
-.single-img img{
+
+.single-img img {
     width: 100%;
     height: auto;
 }
-.single-heading{
+
+.single-heading {
     font-size: 36px;
     line-height: 52px;
     margin-bottom: 12px !important;
@@ -291,14 +414,16 @@ margin-bottom: 15px;
     font-family: Poppins;
     font-weight: 600;
 }
-#dr-contact h6{
+
+#dr-contact h6 {
     font-size: 16px;
     color: #007df2;
     text-align: inherit;
     padding-top: 2px !important;
     padding-bottom: 16px !important;
 }
-.dr-social a{
+
+.dr-social a {
     font-size: 16px;
     line-height: 35px;
     float: left;
@@ -311,59 +436,74 @@ margin-bottom: 15px;
     border-radius: 50%;
     padding: 0 9.5px;
 }
-.dr-social a:last-child{
+
+.dr-social a:last-child {
     margin-right: 0;
 }
-.dr-social a:hover{
+
+.dr-social a:hover {
     background: rgba(0, 125, 242, 1);
     color: #fff;
 }
+
 /* DR-CONTACT-INFO */
-.dr-fancybox{
+.dr-fancybox {
     padding-top: 71px;
 }
-.dr-cont-info{
-position: relative;
-margin-top: 65px;
+
+.dr-cont-info {
+    position: relative;
+    margin-top: 65px;
 }
-.dr-cont-info.first{
+
+.dr-cont-info.first {
     margin-top: 0;
-    }
+}
+
 .content-top {
     border-bottom: #e6e6e6 solid 1px;
     padding-bottom: 11px;
 }
-.dr-cont-info-icon{
+
+.dr-cont-info-icon {
     border-radius: 5px;
     display: inline-block;
     padding-right: 6px;
 }
-.dr-cont-info-icon i{
+
+.dr-cont-info-icon i {
     font-size: 25px;
     line-height: 26px;
     color: rgba(0, 125, 242, 1);
 }
+
 .flaticon-first-aid-kit-1:before {
     content: "\f162";
 }
+
 .flaticon-business-card-of-a-man-with-contact-info:before {
     content: "\f163";
 }
+
 .flaticon-call-answer:before {
     content: "\f11f";
 }
+
 .flaticon-email:before {
     content: "\f170";
 }
+
 .flaticon-calendar-with-a-clock-time-tools:before {
     content: "\f164";
 }
+
 .block-icon i {
     color: #303030;
     font-size: 15px;
     line-height: 26px;
     padding-right: 15px;
 }
+
 .dr-cont-info-title {
     font-weight: 600;
     font-size: 24px;
@@ -373,18 +513,21 @@ margin-top: 65px;
     display: inline-block;
     transition: all 300ms linear 0ms;
 }
+
 .dr-cont-info-desc {
     font-size: 15px;
     line-height: 26px;
     color: #777;
     padding-top: 23px;
 }
-.time-working{
+
+.time-working {
     list-style: none;
     padding: 0;
     padding-top: 25px;
     display: block;
 }
+
 .time-working li {
     font-size: 14px;
     position: relative;
@@ -392,26 +535,32 @@ margin-top: 65px;
     width: 100%;
     padding-bottom: 10px;
 }
+
 .time-working li span {
     float: right;
     color: #303030;
 }
-#dr-info{
+
+#dr-info {
     background-color: #fff;
 }
-#dr-info .column_inner{
+
+#dr-info .column_inner {
     padding-left: 30px;
     padding-top: 114px !important;
 }
-.intro{
+
+.intro {
     margin-top: 0;
     color: #303030;
     margin-bottom: 15px !important;
 }
-.block{
+
+.block {
     margin-bottom: 18px !important;
     padding-top: 19px !important;
 }
+
 blockquote {
     margin: 0;
     padding: 0;
@@ -430,10 +579,12 @@ blockquote:before {
     font-size: 18px;
     color: rgba(0, 125, 242, 1);
 }
-.block-text{
+
+.block-text {
     margin-bottom: 22px !important;
 }
-.skills{
+
+.skills {
     padding-top: 28px !important;
     margin-bottom: 15px !important;
     font-size: 24px;
@@ -441,26 +592,31 @@ blockquote:before {
     font-weight: 600;
     color: #303030 !important;
 }
-.skill{
+
+.skill {
     padding-left: 15px;
     padding-right: 15px;
 }
-.skill-list{
+
+.skill-list {
     padding-top: 28px !important;
     margin-left: -15px;
     margin-right: -15px;
 }
-.column_skill{
+
+.column_skill {
     padding: 0;
 }
-.column_skill .skill{
+
+.column_skill .skill {
     margin-bottom: 35px;
 }
 
-.skill ul{
+.skill ul {
     padding-left: 0;
     display: block;
 }
+
 .skill ul li {
     position: relative;
     padding-left: 28px;
@@ -468,7 +624,8 @@ blockquote:before {
     font-weight: 600;
     color: #303030;
 }
-.skill ul li::before{
+
+.skill ul li::before {
     content: "\f156";
     font-family: Flaticon;
     font-style: normal;
@@ -478,20 +635,24 @@ blockquote:before {
     top: 0;
     color: rgba(0, 125, 242, 1);
 }
-.consultation{
+
+.consultation {
     font-size: 24px;
     line-height: 33px;
     color: #303030;
 }
-.dr-info-text-box{
+
+.dr-info-text-box {
     margin-bottom: 35px;
     padding-bottom: 4px;
 }
-.dr-consultation-form{
+
+.dr-consultation-form {
     margin-bottom: 114px;
     padding-left: 0;
 }
-.find-dr-content-left{
+
+.find-dr-content-left {
     padding-top: 114px;
     padding-right: 30px;
 }
@@ -499,111 +660,171 @@ blockquote:before {
 
 /* RESPONSIVITY */
 
-@media (max-width: 768px){
-    .column-inner-dr{
+@media (max-width: 768px) {
+    .column-inner-dr {
         padding-right: 20px;
         padding-left: 20px;
         padding-bottom: 53px;
         height: 360px;
     }
 }
- 
+
 @media (max-width: 375px) {
-    .full-page{
+    .full-page {
         overflow: hidden;
     }
+
+    #doctors-main .column {
+        padding: 0 !important;
+    }
+
     .dr-content-left {
-        padding-right: 15px;
-        padding-left: 30px !important;
-     
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+
     }
-    .column-inner-dr{
+
+    .find-dr-content-left {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+
+    }
+
+    .column-inner-dr {
         padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 80px;
+        padding-left: 20px;
+        padding-bottom: 80px;
     }
-    .grid-media{
+
+    .content-main {
+        display: block !important;
+    }
+
+    .grid-media {
         width: 100% !important;
     }
-    .content-right{
+
+    .content-right {
         width: 100%;
         padding: 0 15px 25px;
         text-align: left;
     }
-    .skill{
+
+    .skill {
         padding-left: 0;
     }
-    .single-content-left{
+
+    .single-content-left {
         width: 375px !important;
-    
+
     }
+
+    .single-img {
+        margin-top: 0 !important;
+    }
+
     .col-sm-6 {
         width: 100% !important;
-    } 
-    .column_inner{
-        width: 375px;
+    }
+
+    .column_inner {
+        width: 100%;
+    }
+
+    #dr-content-area {
         padding-left: 15px;
         padding-right: 15px;
     }
-    #dr-info{
+
+    #dr-info {
         width: 375px;
- 
+
     }
-    .d-flex{
+
+    .d-flex {
         display: block !important;
     }
+
     #single-content-area {
-        padding-right: 0px;
-        padding-left: 15px;
+        padding: 0 !important;
+        background-color: #fff;
+    }
+
+    #dr-contact {
+        padding: 0 !important;
+    }
+
+    .dr-cont-info-content {
+        padding: 0;
+        flex-direction: column !important;
+    }
+
+    #dr-info .column_inner {
+        padding-left: 15px !important;
+    }
+    .contact-style2{
+        background-color: #fff;
     }
     #form-section{
+        padding: 0 !important;
+    }
+
+    #form-section {
         margin-bottom: 25px;
     }
-    .cta-title{
+
+    .cta-title {
         font-size: 30px;
     }
-    .book-to-appointment{
+
+    .book-to-appointment {
         width: 375px !important;
         padding-left: 20px;
         padding-right: 15px;
     }
-    .cta-button{
+
+    .cta-button {
         padding-top: 20px;
     }
- 
- 
+
+
     /* foooter */
-.row_list{
-    display: block !important;
-  }
-  .inner {
-    width: 375px !important;
-    padding-left: 15px !important;
-  }
-  
-  h3.footer-title{
-    padding-top: 30px !important;
-    padding-bottom: 0 !important;
-  
-  }
-  .column p{
-    width: auto !important;
-  }
-  .container{
-    padding-left: 0 !important;
-  }
-  .layout-default{
-    width: 375px !important;
-    padding-left: 30px !important;
-    height: 250px !important;
-  }
-   .layout-default>.row{
-     width: 345px !important;
-   }
-   .social-icon{
-     justify-content: space-around;
-     width: 175px !important;
-   }
+    .row_list {
+        display: block !important;
+    }
+
+    .inner {
+        width: 375px !important;
+        padding-left: 15px !important;
+    }
+
+    h3.footer-title {
+        padding-top: 30px !important;
+        padding-bottom: 0 !important;
+
+    }
+
+    .column p {
+        width: auto !important;
+    }
+
+    .container {
+        padding-left: 0 !important;
+    }
+
+    .layout-default>.row {
+        width: 345px !important;
+    }
+
+    .social-icon {
+        justify-content: space-around;
+        width: 175px !important;
+    }
 }
- 
- 
+
+@media(max-width: 1024px) {
+    .book-to-appointment {
+        padding-left: 35.5px;
+        padding-right: 35.5px;
+    }
+}

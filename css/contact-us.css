@@ -244,6 +244,8 @@ body {
 .cont-social-list {
 	margin-top: 45px;
 	display: inline-block;
+	text-align: end;
+	justify-content: flex-end;
 }
 
 .cont-social-list a {
@@ -301,14 +303,15 @@ div.ajax-loader.is-active {
 		padding: 48px 0 24px 0 !important;
 	}
 }
-
-@media (max-width: 1200px) {
-	.row {
-		margin-left: -15px !important;
-		margin-right: -15px !important;
+@media(max-width: 1024px){
+	.contact-form .row > div{
+		padding-left: 0;
+		padding-right: 15px !important;
+	}
+	.contact-form p.submit-p{
+		padding-right: 15px !important;
 	}
 }
-
 @media (max-width: 768px) {
 	.col-sm-6 {
 		width: 50%;
@@ -317,11 +320,40 @@ div.ajax-loader.is-active {
 	#form-section {
 		float: right;
 	}
+	.main.container{
+		padding-right: 0 !important;
+	}
+	.contact-form .row > div{
+		padding-right: 0 !important;
+	}
+	.contact-form p.submit-p{
+		padding-right: 0 !important;
+	}
 }
 
-@media (min-width: 320px) {
+@media (max-width: 375px) {
 	.cont-social-list {
 		margin-bottom: 30px;
+		justify-content: center !important;
+		text-align: center !important;
+		width: 100%;
+	}
+	.cont-social-list a{
+		max-width: 30px;
+	}
+	.cont-social-list a span{
+		max-width: 30px;
+	}
+	.row{
+		margin: 0 !important;
+	}
+	#mail,
+	#interest{
+		padding-left: 0;
+	}
+	#tel,
+	#name{
+		padding-right: 0;
 	}
 }
 

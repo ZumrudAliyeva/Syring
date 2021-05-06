@@ -22,7 +22,7 @@
      <header>
         <div id="header-top" class="header-top clearfix">
             <div class="row justify-content-between header-top-row">
-                <div class="column col-sm-12 col-lg-8 col-md-12 left-line">
+                <div class="column col-sm-12 col-lg-9 col-md-12 left-line">
                     <div class="column-inner">
                         <div class="contact-us-head">
                             <span>
@@ -40,9 +40,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="column col-sm-12 col-lg-4 col-md-12 right-line">
+                <div class="column col-sm-12 col-lg-3 col-md-12 right-line">
                     <div class="column-inner">
-                        <div class="social-list text-end d-flex justify-content-end">
+                        <div class="social-list text-end justify-content-end">
                             <a class="header-icon header-icon-social"><span
                                     class="social-icon fa fa-facebook"></span></a>
                             <a class="header-icon header-icon-social"><span
@@ -68,18 +68,18 @@
                     <div class="header-menu col-9 col-sm-9 d-flex justify-content-end">
                         <nav id="navigation" class="navbar navbar-expand-lg static-nav">
                             <ul id="menu-main-menu" class="main-nav desktop-nav">
-                                <li class="nav-item"><a href="#" class="nav-link"><span>Home</span></a></li>
+                                <li class="nav-item"><a href="index.html" class="nav-link"><span>Home</span></a></li>
                                 <li class="nav-item pages">
                                     <a href="#" class="nav-link"><span>Pages</span></a>
-                                    <div class="sub-menu d-flex justify-content-between sub_menu" data-aos="fade-up"
+                                    <div class="justify-content-between sub_menu sub_menu_first" data-aos="fade-up"
                                         data-aos-easing="ease-in-back" data-aos-delay="300">
-                                        <ul>
+                                        <ul class="col-4">
                                             <li><a href="our-clinic.html" class="page-name">Our Clinic</a></li>
                                             <li><a href="contact-us.html" class="page-name">Contact Us</a></li>
                                             <li><a href="faq.html" class="page-name">FAQ</a></li>
                                             <li><a href="pricing.html" class="page-name">Pricing</a></li>
                                         </ul>
-                                        <div class="location">
+                                        <div class="location col-8">
                                             <iframe
                                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2s!4v1560412999092!5m2!1sen!2s"
                                                 width="600" height="175" frameborder="0" style="border:0"
@@ -92,7 +92,7 @@
                                         data-aos-delay="300">
                                         <ul>
                                             <li><a href="doctors.html" class="page-name">Find A Doctor</a></li>
-                                            <li><a href="#view-profil" class="page-name">Doctor Single</a></li>
+                                            <li><a href="doctor-single.html" class="page-name">Doctor Single</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -103,7 +103,7 @@
                                         <ul>
                                             <li><a href="departments.html" class="page-name">Medical Departments</a>
                                             </li>
-                                            <li><a href="#dental-clinic" class="page-name">Dental Clinic</a></li>
+                                            <li><a href="dental-clinic.html" class="page-name">Dental Clinic</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -112,9 +112,9 @@
                                     <div class="sub-menu sub_menu" data-aos="fade-up" data-aos-easing="ease-in-back"
                                         data-aos-delay="300">
                                         <ul>
-                                            <li><a href="doctors.html" class="page-name">Shop Sidebar Left</a></li>
-                                            <li><a href="#cart-page" class="page-name">Cart</a></li>
-                                            <li><a href="#checkout-page" class="page-name">Checkout</a></li>
+                                            <li><a href="shop.html" class="page-name">Shop Sidebar Left</a></li>
+                                            <li><a href="cart.html" class="page-name">Cart</a></li>
+                                            <li><a href="checkout.html" class="page-name">Checkout</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -146,11 +146,15 @@
                                 </div>
                                 <a href="#header-cart" class="header-icon header-cart">
                                     <span class="flaticon-shopping-cart">
-                                    </a>
-                                    <sup><span class="cart_total">0</span></sup>
+                                </a>
+                                <sup><span class="cart_total">0</span></sup>
                                 <div class="mini-cart mousewheel open">
                                     <div class="mousewheel-inner widget_shopping_cart">
-                                        <p class="woocommerce-mini-cart__empty-message">No products in the basket.</p>
+                                        <ul class="cart_list"></ul>
+                                        <p class="empty-msg">No products in the basket.</p>
+                                        <p class="total">
+                                        <strong>Subtotal:</strong><span class="Price"><span class="">$</span></span></p>
+                                        <p class="buttons"><a href="cart.html" class="">View basket</a><a href="checkout.html" class="">Checkout</a></p>
                                     </div>
                                 </div>
                                 <a href="javascript:void(0)" id="menu-mobile" class="menu-mobile header-icon d-xl-none"
@@ -162,7 +166,67 @@
                     </div>
                 </div>
             </div>
+            <nav id="navigation-mobile" class="navbar col-md-12 col-sm-12">
+                <ul id="menu-main-menu-mobile" class="main-nav desktop-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link"><span>Home</span></a></li>
+                    <li class="nav-item pages">
+                        <a href="#" class="nav-link"><span>Pages</span></a>
+                        <span class="toggle"><i class="fas fa-plus closed"></i><i class="fas fa-minus opened"></i></span>
+                        <div class="sub_menu sub_menu_mobile pages justify-content-between" data-aos="fade-up"
+                            data-aos-easing="ease-in-back" data-aos-delay="300">
+                            <ul class="col-4 ul-first">
+                                <li><a href="our-clinic.html" class="page-name">Our Clinic</a></li>
+                                <li><a href="contact-us.html" class="page-name">Contact Us</a></li>
+                                <li><a href="faq.html" class="page-name">FAQ</a></li>
+                                <li><a href="pricing.html" class="page-name">Pricing</a></li>
+                            </ul>
+                            <div class="location col-8">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2s!4v1560412999092!5m2!1sen!2s"
+                                    width="600" height="175" frameborder="0" style="border:0"
+                                    allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item doctors"><a href="#" class="nav-link"><span>Doctors</span></a>
+                        <span class="toggle"><i class="fas fa-plus closed"></i><i class="fas fa-minus opened"></i></span>
+                        <div class="sub_menu sub_menu_mobile doctors" data-aos="fade-up" data-aos-easing="ease-in-back"
+                            data-aos-delay="300">
+                            <ul>
+                                <li><a href="doctors.html" class="page-name">Find A Doctor</a></li>
+                                <li><a href="doctor-single.html" class="page-name">Doctor Single</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item departments"><a href="#"
+                            class="nav-link"><span>Departments</span></a>
+                            <span class="toggle"><i class="fas fa-plus closed"></i><i class="fas fa-minus opened"></i></span>
+                        <div class="sub_menu sub_menu_mobile departments" data-aos="fade-up" data-aos-easing="ease-in-back"
+                            data-aos-delay="300">
+                            <ul>
+                                <li><a href="departments.html" class="page-name">Medical Departments</a>
+                                </li>
+                                <li><a href="dental-clinic.html" class="page-name">Dental Clinic</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link"><span>Blog</span></a></li>
+                    <li class="nav-item shop"><a href="#" class="nav-link"><span>Shop</span></a>
+                        <span class="toggle"><i class="fas fa-plus closed"></i><i class="fas fa-minus opened"></i></span>
+                        <div class="sub_menu sub_menu_mobile shop" data-aos="fade-up" data-aos-easing="ease-in-back"
+                            data-aos-delay="300">
+                            <ul>
+                                <li><a href="shop.html" class="page-name">Shop Sidebar Left</a></li>
+                                <li><a href="cart.html" class="page-name">Cart</a></li>
+                                <li><a href="checkout.html" class="page-name">Checkout</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span>Elements</span></a></li>
+                </ul>
+            </nav>
         </div>
+
     </header>
     <!-- TITLE SECTION -->
     <div class="page-title-wrapper">
@@ -195,7 +259,7 @@
     <!-- CARUSEL SECTION -->
     <div class="row row-fluid carousel-field">
         <div class="column_inner d-flex pricing-carousel owl-carousel">
-            <div class="carousel-item item">
+            <div class="carousel-item item w-100">
                 <div class="pricing-item overlay-wrap ">
                     <div class="pricing-info">
                         <h4 class="title-pricing">Professional</h4>
@@ -214,7 +278,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item item">
+            <div class="carousel-item item w-100">
                 <div class="pricing-item selected overlay-wrap  feature">
                     <div class="pricing-info">
                         <h4 class="title-pricing">Standard</h4>
@@ -233,7 +297,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item item">
+            <div class="carousel-item item w-100">
                 <div class="pricing-item overlay-wrap ">
                     <div class="pricing-info">
                         <h4 class="title-pricing">Basic</h4>

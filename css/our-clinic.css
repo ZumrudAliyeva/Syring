@@ -231,7 +231,7 @@ li {
     background-repeat: no-repeat !important;
     background-size: cover !important;
     height: 500px;
-    width: 1199px;
+    width: 100%;
 }
 
 .empty {
@@ -405,7 +405,7 @@ h5 {
 
     .content,
     .main-content-img {
-        width: 768px;
+        width: 100%;
     }
 
     .content_2,
@@ -414,7 +414,8 @@ h5 {
     }
 
     .img-list {
-        padding-left: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .content_3 {
@@ -458,9 +459,44 @@ h5 {
 .hover {
     position: absolute;
     top: 23px !important;
-    left: 23px !important; }
+    left: 23px !important; 
+}
+.our-clinic-img{
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+.section2 {
+padding-top: 0 !important;
+}
 
+}
 
+@media(max-width: 1024px){
+    .our-clinic-img{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .gallery-list li img{
+        width: 80% !important;
+        height: auto !important;
+    }
+    .gallery-list li{
+        width: 70% !important;
+    }
+    li.img2{
+        left: 170px;
+    }
+    .section1{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .about-img-aos{
+        width: 30%;
+        height: auto;
+    }
+    .about-img-aos img{
+        width: 100% !important;
+    }
 }
 
 @media (min-width: 320px) {
@@ -472,6 +508,10 @@ h5 {
     .full-page{
         overflow: hidden !important ;
     }
+    .footer .container{
+        width: 100%;
+        padding: 0 15px !important;
+    }
     .heading{
         font-size: 30px !important;
         line-height: 40px !important;
@@ -479,23 +519,25 @@ h5 {
     .main-left{
         padding-left: 0;
         width: 375px;
-        margin-left: -15px;
-        margin-right: -15px;
         display: flex;
         flex-wrap: wrap;
         padding-top: 82px;
     }
     #main{
-        padding-top: 0 !important;
+        padding: 0 !important;
         display: block !important;
     }
     .gallery-list{
         height: 1057px !important;
     }
+    ul.gallery-list li{
+        width: 100% !important;
+    }
     .img1{
         margin-top: 39px !important;
         margin-right: -64px;
         z-index: 100;
+        width: 100% !important;
     }
     .main-right{
         width: 100% !important;
@@ -507,11 +549,13 @@ h5 {
     .img2{
         position: absolute;
         left: 0px !important;
-        top: 548px !important;
+        top: 622px !important;
+        width: 100% !important;
     
     }
     .main-content-img{
-        width: 375px !important; 
+        margin-top: 60px !important;
+        width: 100% !important; 
         height: 200px !important;
     
     }
@@ -520,7 +564,8 @@ h5 {
         height: auto !important;
     }
     .content_2{
-        width: 375px;
+        width: 100% !important;
+        padding: 0;
         display: block !important;
     }
     .content-left{
@@ -543,7 +588,7 @@ h5 {
         width: 375px !important;
     }
     .img-list{
-        padding-left: 30px !important;
+        padding-left: 15px !important;
         padding-right: 15px !important;
         display: block !important;
     }

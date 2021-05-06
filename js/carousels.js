@@ -12,14 +12,15 @@ $('.home-blogs').owlCarousel({
     margin:30,
     nav: false,
     dots: false,
+    responsiveClass:true,
     responsive:{
         1200:{
             items: 3,
         },
-        991:{
+        768:{
             items: 2,
         },
-        813:{
+        375:{
             items: 1,
         },
     }
@@ -27,21 +28,32 @@ $('.home-blogs').owlCarousel({
 
 /*== HOME TESTIMONIALS CAROUSEL ==*/
 $('.testimonials-carousel').owlCarousel({
+    center: true,
     loop: true,
+    items: 2,
     autoplay:false,
     margin:30,
     nav: false,
     dots: false,
+    responsiveClass:true,
     responsive:{
         1200:{
             items: 4,
         },
         991:{
+            items: 3,
+            center: false,
+        },
+        768:{
             items: 2,
+            center: true,
         },
-        813:{
+        375:{
             items: 1,
-        },
+            center: false,
+            stagePadding: 15,
+            autoplay: true,
+        }
     }
 })
 
@@ -50,16 +62,17 @@ $('.testimonials-carousel').owlCarousel({
     $('.pricing-carousel').owlCarousel({
         loop: true,
         nav: false,
-        margin: 10,
+        margin: 15,
         dots: false,
+        responsiveClass:true,
         responsive:{
             1200:{
                 items: 3,
             },
-            991:{
+            768:{
                 items: 2,
             },
-            813:{
+            375:{
                 items: 1,
             },
         }
@@ -68,6 +81,5 @@ $(document).on('click', '.pricing-item',function () {
     $('.pricing-item.selected').removeClass('selected');
     $(this).addClass('selected');
 })
-
 
 })

@@ -1,10 +1,12 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     background: #f5f5f5;
 }
-.main-section-header h3{
+
+.main-section-header h3 {
     color: rgba(0, 125, 242, 1);
     text-transform: uppercase;
     font-size: 14px;
@@ -12,6 +14,7 @@ body{
     font-weight: 700;
     line-height: 22px;
 }
+
 .price-page-heading {
     position: relative;
     z-index: 2;
@@ -21,16 +24,18 @@ body{
     font-weight: 600;
     line-height: 45px;
 }
-.main-section-header{
+
+.main-section-header {
     box-sizing: border-box;
     padding-left: 15px;
-	padding-right: 15px;
+    padding-right: 15px;
     padding-top: 111px !important;
     text-align: center;
     background-color: #f5f5f5;
 }
+
 /* CAROUSEL */
-.carousel-field{
+.carousel-field {
     position: relative;
     box-sizing: border-box;
     margin: 0 !important;
@@ -41,6 +46,7 @@ body{
     padding-bottom: 90px !important;
     background-color: #f5f5f5 !important;
 }
+
 .column_inner {
     box-sizing: border-box;
     padding-left: 15px;
@@ -48,11 +54,13 @@ body{
     padding-top: 35px;
     width: 100%;
 }
-.carousel-item{
+
+.carousel-item {
     display: block;
-    width: 366.667px; 
+    width: 100%;
 
 }
+
 .pricing-item {
     padding: 43px 36px 50px;
     transition: all 300ms linear 0ms;
@@ -61,32 +69,38 @@ body{
     margin-bottom: 30px;
     border: 1px solid #eee;
 }
+
 .title-pricing {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 24px;
     transition: all 300ms linear 0ms;
 }
+
 .subtitle-pricing {
     font-size: 15px;
     line-height: 26px;
 }
+
 .price-wrap {
     color: rgba(0, 125, 242, 1);
     font-weight: 600;
     padding-top: 22px;
 }
+
 .unitprice {
     font-size: 24px;
     position: relative;
     top: -15px;
 }
+
 .price-wrap .price {
     font-size: 48px;
     line-height: 1;
     padding-left: 10px;
     padding-right: 9px;
 }
+
 .price-wrap .per {
     margin-top: 1em;
     color: #303030;
@@ -96,14 +110,17 @@ body{
     top: -4px;
     font-weight: 500;
 }
+
 .description {
     padding: 60px 0px 0;
     font-size: 14px;
     line-height: 26px;
 }
+
 .footer-pricing {
     margin-top: 50px;
 }
+
 .footer-pricing a {
     font-size: 15px;
     font-weight: 600;
@@ -114,27 +131,34 @@ body{
     border-radius: 4px;
     width: 100%;
 }
-.pricing-item.selected{
-border: 1px solid #007DF2;
+
+.pricing-item.selected {
+    border: 1px solid #007DF2;
 }
-.pricing-item.selected .footer-pricing a{
+
+.pricing-item.selected .footer-pricing a {
     background-color: #007DF2;
     color: #fff;
 }
-.pricing-item:hover{
-border: 1px solid #007DF2;
+
+.pricing-item:hover {
+    border: 1px solid #007DF2;
 }
-.pricing-item:hover .footer-pricing a{
+
+.pricing-item:hover .footer-pricing a {
     background-color: #007DF2;
     color: #fff;
 }
-.description ul{
+
+.description ul {
     display: block !important;
     padding-left: 0;
 }
-.description ul i{
+
+.description ul i {
     margin-right: 27px;
 }
+
 .description ul li {
     font-size: 14px;
     line-height: 26px;
@@ -143,21 +167,24 @@ border: 1px solid #007DF2;
     padding-bottom: 12px;
     margin-bottom: 12px;
 }
+
 /* BOOK TO APPOINTMENT */
-.book-to-appointment{
+.book-to-appointment {
     background-color: #007DF2;
     padding: 39px 0 38px;
     padding-left: 74.5px;
     padding-right: 84.5px;
 }
-.book-to-appointment .row{
+
+.book-to-appointment .row {
     width: 100%;
     margin: 0;
 }
 
-.book-to-appointment-contents{
+.book-to-appointment-contents {
     padding: 0;
 }
+
 .cta-content {
     /* line-height: 1.8em; */
     font-weight: 500;
@@ -165,7 +192,8 @@ border: 1px solid #007DF2;
     font-size: 36px;
     color: #fff;
 }
-.cta-button a{
+
+.cta-button a {
     padding: 16.5px 35px;
     margin: 10px 0;
     border-radius: 5px;
@@ -181,10 +209,12 @@ border: 1px solid #007DF2;
     font-style: normal;
     text-transform: capitalize;
 }
-.cta-button a:hover{
+
+.cta-button a:hover {
     background: #303030;
     color: #fff;
 }
+
 .cta-title {
     font-weight: 600;
     font-size: 36px;
@@ -192,99 +222,114 @@ border: 1px solid #007DF2;
     margin: 0;
 }
 
- 
+
 @media (max-width: 768px) {
-    .full-page{
+    .full-page {
         overflow: hidden;
     }
-   .owl-stage-outer{
-       width: 506px !important;
-       overflow: visible !important;
-   }
-   .owl-item{
-       width: auto !important;
-   }
-   .carousel-field{
-       padding-left: 0;
-       padding-right: 0;
-   }
-   .owl-stage{
-       display: flex;
-   }
+
+    .pricing-carousel {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .carousel-field {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .column_inner.pricing-carousel{
+        padding: 0 !important;
+    }
     /* footer */
     .row_list {
         width: 720px;
-      }
-    .appointment{
-      width: auto;
     }
-    
-      .inner {
+
+    .appointment {
+        width: auto;
+    }
+
+    .inner {
         width: 180px !important;
         padding-left: 15px !important;
-      }
-    
-      .text-content {
+    }
+
+    .text-content {
         width: auto !important;
-      }
-    
-      .layout-default {
+    }
+
+    .layout-default {
         width: 150px !important;
-      }
-    
-      .social-icon {
+    }
+
+    .social-icon {
         display: flex;
         justify-content: space-between;
-      }
-    
-      .column>p {
+    }
+
+    .column>p {
         width: 110px;
-      }
+    }
 }
+
 @media (max-width: 375px) {
- 
- 
+
     /* foooter */
-.row_list{
-    display: block !important;
-  }
-  .inner {
-    width: 375px !important;
-    padding-left: 15px !important;
-  }
-  
-  h3.footer-title{
-    padding-top: 30px !important;
-    padding-bottom: 0 !important;
-  
-  }
-  .column p{
-    width: auto !important;
-  }
-  .container{
-    padding-left: 0 !important;
-  }
-  .layout-default{
-    width: 375px !important;
-    padding-left: 30px !important;
-    height: 250px !important;
-  }
-   .layout-default>.row{
-     width: 345px !important;
-   }
-   .social-icon{
-     justify-content: space-around;
-     width: 175px !important;
-   }
-   .book-to-appointment {
-    padding-left: 15px;
-    padding-right: 0;
- 
-  
-  }
-  .cta-button{
-      padding-top: 15px;
-  }
- 
+    .row_list {
+        display: block !important;
+    }
+
+    .inner {
+        width: 375px !important;
+        padding-left: 15px !important;
+    }
+
+    h3.footer-title {
+        padding-top: 30px !important;
+        padding-bottom: 0 !important;
+
+    }
+
+    .column p {
+        width: auto !important;
+    }
+
+    .container {
+        padding-left: 0 !important;
+    }
+
+    .layout-default {
+        width: 375px !important;
+        height: 250px !important;
+    }
+
+    .layout-default>.row {
+        width: 345px !important;
+    }
+
+    .social-icon {
+        justify-content: space-around;
+        width: 175px !important;
+    }
+
+    .book-to-appointment {
+        padding-left: 15px;
+        padding-right: 0;
+
+
+    }
+
+    .cta-button {
+        padding-top: 15px;
+    }
+
 }
- 
+@media(max-width: 1024px){
+    .carousel-field{
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    .pricing-item{
+        padding: 20px;
+    }
+}
